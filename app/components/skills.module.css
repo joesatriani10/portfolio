@@ -1,0 +1,13 @@
+.skillsContainer {
+    @apply p-8 bg-gray-800 rounded-lg flex flex-col items-start;
+    background: #242323FF;
+    padding: 3rem;
+}
+
+.skillsHeader {
+    @apply text-xl font-bold mb-4 text-white;
+}
+
+.skillsList {
+    @apply list-disc list-inside text-white;
+}
