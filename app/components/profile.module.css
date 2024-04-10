@@ -1,0 +1,7 @@
+.profilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the picture circular */
+    object-fit: cover; /* Make the picture cover the entire div */
+    margin-bottom: 1rem; /* Add space below the picture */
+}
