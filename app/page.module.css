@@ -2,8 +2,6 @@
     padding: 2rem;
     max-width: 1024px;
     margin: 0 auto;
-    color: var(--foreground-rgb);
-    background-color: var(--background-start-rgb);
 }
 
 /* For tablets and small desktops */
@@ -41,11 +39,4 @@
 .section {
     margin-bottom: 2rem;
     padding: 2rem;
-    background-color: var(--background-color);
-    color: var(--foreground-rgb);
-}
-
-.a {
-    color: var(--link-color);
-    text-decoration: none;
 }

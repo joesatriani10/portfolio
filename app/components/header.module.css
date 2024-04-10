@@ -1,5 +1,4 @@
 .header {
-    padding: 1rem;
-    background-color: var(--background-color);
-    color: var(--foreground-rgb);
+    padding: 3rem;
+    background: radial-gradient(circle, rgb(36, 35, 35) 0%, #19191a 100%);
 }
