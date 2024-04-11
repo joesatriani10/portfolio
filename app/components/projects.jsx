@@ -1,4 +1,3 @@
-'use client';
 import styles from "@/app/page.module.css";
 import css from "./projects.module.css";
 import glow from "../glowEffect.module.css" ;
