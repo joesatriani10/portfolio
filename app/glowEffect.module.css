@@ -38,6 +38,16 @@
     color: transparent;
 }
 
+.glowOrange {
+    background: -webkit-linear-gradient(to right, #ff7f00, #ff7f00); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff7f00, #ff7f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 5px #ff7f00, 0 0 10px #ff7f00, 0 0 15px #ff7f00, 0 0 20px #ff7f00, 0 0 30px #ff7f00, 0 0 40px #ff7f00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .header:hover h1 {
     @apply glowBlue;
 }
@@ -58,6 +68,10 @@
     @apply glowBlue;
 }
 
+.glowBlueHoverProjects:hover h1 {
+    @apply glowBlue;
+}
+
 .glowPinkHover:hover {
     @apply glowPink;
 }
@@ -68,6 +82,10 @@
 
 .glowYellowHover:hover {
     @apply glowYellow;
+}
+
+.glowOrangeHover:hover {
+    @apply glowOrange;
 }
 
 .glowProfile:hover strong {

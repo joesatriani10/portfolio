@@ -1,14 +1,14 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 3rem; /* Increase the gap between the cards */
 }
 
 .card {
     padding: 1rem;
-    border: 1px solid #BFBFBF; /* Light gray border */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle 3D effect */
-    background-color: white;
+    border: 2px solid #242323FF; /* Light gray border */
+    background: #242323FF;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
@@ -16,17 +16,29 @@
 .card h3 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    @apply text-zinc-400;
 }
 
 .card p {
     font-size: 1rem;
+    @apply text-zinc-400;
 }
 
 .card:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
-
 
 .image {
     border-radius: 10px;
+}
+
+/* change size of h2 text under section*/
+.text-size {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    @apply text-xl font-bold mb-4 text-white;
+    margin: 1rem 0 0 3rem;
 }

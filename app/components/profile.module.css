@@ -23,6 +23,10 @@
 
 .profileText {
     @apply w-1/2;
-    @apply text-2xl;
+    @apply text-2xl text-zinc-400;
     padding-right: 2rem;
+}
+
+.profileText strong {
+    @apply text-white;
 }

@@ -1,7 +1,7 @@
 .skillsContainer {
     @apply p-8 bg-gray-800 flex flex-col items-start;
     background: #242323FF;
-    padding: 3rem;
+    padding: 5rem;
 }
 
 .skillsHeader {
@@ -9,5 +9,5 @@
 }
 
 .skillsList {
-    @apply list-disc list-inside text-white;
+    @apply list-disc list-inside text-zinc-400;
 }
