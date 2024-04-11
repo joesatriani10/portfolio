@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./profile.module.css";
-import glow from "@/app/glowEffect.module.css";
-import angelPic from '@/app/images/angel.jpg';
+import styles from "../components/profile.module.css";
+import glow from "../glowEffect.module.css";
+import angelPic from '../images/angel.jpg';
 
 
 const Profile = () => {

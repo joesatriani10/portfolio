@@ -1,5 +1,5 @@
-import styles from "@/app/page.module.css";
-import css from "./projects.module.css";
+import styles from "../page.module.css";
+import css from "../components/projects.module.css";
 import glow from "../glowEffect.module.css" ;
 import foodPic from "../images/foodapp.png";
 import Image from "next/image";

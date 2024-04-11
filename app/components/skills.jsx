@@ -1,5 +1,5 @@
-import styles from './skills.module.css';
-import glow from '@/app/glowEffect.module.css';
+import styles from '../components/skills.module.css';
+import glow from '../glowEffect.module.css';
 
 const Skills = () => {
 

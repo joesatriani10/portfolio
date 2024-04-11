@@ -1,5 +1,5 @@
-import styles from './header.module.css'
-import glow from '@/app/glowEffect.module.css';
+import styles from '../components/header.module.css';
+import glow from '../glowEffect.module.css';
 
 const Header = () => {
     return (
