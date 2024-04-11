@@ -1,5 +1,5 @@
 .skillsContainer {
-    @apply p-8 bg-gray-800 rounded-lg flex flex-col items-start;
+    @apply p-8 bg-gray-800 flex flex-col items-start;
     background: #242323FF;
     padding: 3rem;
 }

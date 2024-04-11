@@ -1,0 +1,79 @@
+.glowBlue {
+    background: -webkit-linear-gradient(to right, #43c6ac, #08f7fe); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #43c6ac, #08f7fe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 5px #08f7fe, 0 0 10px #08f7fe, 0 0 15px #08f7fe, 0 0 20px #43c6ac, 0 0 30px #43c6ac, 0 0 40px #43c6ac;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.glowPink {
+    background: -webkit-linear-gradient(to right, #ff7ce5, #ff7ce5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff7ce5, #ff7ce5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 5px #ff7ce5, 0 0 10px #ff7ce5, 0 0 15px #ff7ce5, 0 0 20px #ff7ce5, 0 0 30px #ff7ce5, 0 0 40px #ff7ce5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.glowGreen {
+    background: -webkit-linear-gradient(to right, #1fa833, #a8e063); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1fa833, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 5px #a8e063, 0 0 10px #a8e063, 0 0 15px #a8e063, 0 0 20px #1fa833, 0 0 30px #1fa833, 0 0 40px #1fa833;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.glowYellow {
+    background: -webkit-linear-gradient(to right, #fde64b, #fde64b); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fde64b, #fde64b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 5px #fde64b, 0 0 10px #fde64b, 0 0 15px #fde64b, 0 0 20px #fde64b, 0 0 30px #fde64b, 0 0 40px #fde64b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.header:hover h1 {
+    @apply glowBlue;
+}
+
+.header:hover p {
+    @apply glowPink;
+}
+
+.section:hover h3 {
+    @apply glowBlue;
+}
+
+.section:hover ul {
+    @apply glowPink;
+}
+
+.glowBlueHover:hover {
+    @apply glowBlue;
+}
+
+.glowPinkHover:hover {
+    @apply glowPink;
+}
+
+.glowGreenHover:hover {
+    @apply glowGreen;
+}
+
+.glowYellowHover:hover {
+    @apply glowYellow;
+}
+
+.glowProfile:hover strong {
+    @apply glowBlue;
+}
+
+.glowProfile:hover p {
+    @apply glowPink;
+}

@@ -1,11 +1,16 @@
-.profilePicture {
 
+.profilePicture {
     border-radius: 50%; /* Make the picture circular */
     object-fit: cover; /* Make the picture cover the entire div */
     margin-top: 5rem; /* Add some space between the picture and the text */
     margin-bottom: 5rem;
     @apply w-1/2;
     @apply object-cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profilePicture:hover {
+    transform: scale(1.2);
 }
 
 .profilePictureContainer {
@@ -19,4 +24,5 @@
 .profileText {
     @apply w-1/2;
     @apply text-2xl;
+    padding-right: 2rem;
 }

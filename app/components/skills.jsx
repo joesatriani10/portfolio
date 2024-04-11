@@ -1,11 +1,12 @@
 import styles from './skills.module.css';
+import glow from '@/app/glowEffect.module.css';
 
 const Skills = () => {
 
     return (
-        <section className={styles.skillsContainer}>
-            <h3 className={styles.skillsHeader}>Skills and Experience:</h3>
-            <ul className={styles.skillsList}>
+        <section className={`${styles.skillsContainer} ${glow.section}`}>
+            <h3 className={`${styles.skillsHeader}`}>Skills and Experience:</h3>
+            <ul className={`${styles.skillsList}`}>
                 <li>JavaScript, HTML, CSS, React, and Next.js</li>
                 <li>UI/UI Design</li>
                 <li>C#, Swagger, Net 6, API RESTful, Net Framework 4.8</li>
