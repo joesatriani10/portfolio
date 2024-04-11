@@ -23,18 +23,18 @@ const Projects = () => {
                 </a>
 
                 <a href="/project2" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
+                    <h3>Image Recognition</h3>
+                    <p>Working on Page</p>
                 </a>
 
                 <a href="/project3" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3</p>
+                    <h3>Inno Setup Installer</h3>
+                    <p>Working on Page</p>
                 </a>
 
                 <a href="/project4" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 4">
-                    <h3>Project 4</h3>
-                    <p>Description of Project 4</p>
+                    <h3>Recognition</h3>
+                    <p>Working on Page</p>
                 </a>
             </div>
         </section>
