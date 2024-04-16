@@ -11,3 +11,15 @@
 .skillsList {
     @apply list-disc list-inside text-zinc-400;
 }
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.skillsGrid div {
+    margin: 1rem;
+}
