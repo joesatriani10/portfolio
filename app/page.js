@@ -2,6 +2,7 @@ import Projects from "@/app/components/projects";
 import Header from "@/app/components/header";
 import Profile from "@/app/components/profile";
 import Skills from "@/app/components/skills";
+import Experience from "@/app/components/experience";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Header/>
             <Profile/>
             <Skills/>
+            <Experience/>
             <Projects/>
         </main>
     );

@@ -60,10 +60,6 @@
     @apply glowBlue;
 }
 
-.section:hover ul {
-    @apply glowPink;
-}
-
 .glowBlueHover:hover {
     @apply glowBlue;
 }
@@ -93,5 +89,13 @@
 }
 
 .glowProfile:hover p {
+    @apply glowPink;
+}
+
+.glowJobExperienceHover:hover strong{
+    @apply glowYellow;
+}
+
+.glowJobExperienceHover:hover h4{
     @apply glowPink;
 }
