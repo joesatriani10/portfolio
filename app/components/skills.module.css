@@ -23,3 +23,63 @@
 .skillsGrid div {
     margin: 1rem;
 }
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .skillsContainer {
+        padding: 3rem;
+    }
+
+    .skillsHeader {
+        @apply text-lg;
+    }
+
+    .skillsList {
+        @apply text-base;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .skillsContainer {
+        padding: 2rem;
+    }
+
+    .skillsHeader {
+        @apply text-base;
+    }
+
+    .skillsList {
+        @apply text-sm;
+    }
+}
+
+/* For 1080p screens */
+@media (min-width: 1920px) {
+    .skillsContainer {
+        padding: 7rem;
+    }
+
+    .skillsHeader {
+        @apply text-2xl;
+    }
+
+    .skillsList {
+        @apply text-lg;
+    }
+}
+
+/* For ultra-wide screens */
+@media (min-width: 2560px) {
+    .skillsContainer {
+        padding: 10rem;
+    }
+
+    .skillsHeader {
+        @apply text-3xl;
+    }
+
+    .skillsList {
+        @apply text-xl;
+    }
+}
