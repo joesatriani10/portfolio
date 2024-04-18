@@ -6,3 +6,48 @@
 .experienceHeader {
     @apply text-xl font-bold mb-4 text-white;
 }
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .experienceContainer {
+        padding: 3rem;
+    }
+
+    .experienceHeader {
+        @apply text-lg;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .experienceContainer {
+        padding: 2rem;
+    }
+
+    .experienceHeader {
+        @apply text-base;
+    }
+}
+
+/* For 1080p screens */
+
+@media (min-width: 1920px) {
+    .experienceContainer {
+        padding: 7rem;
+    }
+
+    .experienceHeader {
+        @apply text-2xl;
+    }
+}
+
+/* For ultra-wide screens */
+@media (min-width: 2560px) {
+    .experienceContainer {
+        padding: 9rem;
+    }
+
+    .experienceHeader {
+        @apply text-3xl;
+    }
+}
