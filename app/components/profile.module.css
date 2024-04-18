@@ -34,12 +34,13 @@
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
     .profilePicture {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
-
     .profileText {
-        @apply text-xl;
+        @apply mt-4;
+        @apply mb-4;
+        @apply text-sm;
     }
 }
 
