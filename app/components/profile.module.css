@@ -30,3 +30,51 @@
 .profileText strong {
     @apply text-white;
 }
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .profilePicture {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .profileText {
+        @apply text-xl;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .profilePicture {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .profileText {
+        @apply text-lg;
+    }
+}
+
+/* For 1080p screens */
+@media (min-width: 1920px) {
+    .profilePicture {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    .profileText {
+        @apply text-3xl;
+    }
+}
+
+/* For ultra-wide screens */
+@media (min-width: 2560px) {
+    .profilePicture {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .profileText {
+        @apply text-4xl;
+    }
+}
