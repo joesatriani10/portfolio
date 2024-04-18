@@ -38,9 +38,7 @@
         margin-bottom: 1.5rem;
     }
     .profileText {
-        @apply mt-4;
-        @apply mb-4;
-        @apply text-sm;
+        @apply text-2xl;
     }
 }
 
@@ -52,7 +50,9 @@
     }
 
     .profileText {
-        @apply text-lg;
+        @apply text-xl;
+        @apply mt-4;
+        @apply mb-4;
     }
 }
 
