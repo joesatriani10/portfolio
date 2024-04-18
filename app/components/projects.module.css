@@ -42,3 +42,63 @@
     @apply text-xl font-bold mb-4 text-white;
     margin: 1rem 0 0 3rem;
 }
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .grid {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    .title {
+        margin: 1rem 0 0 1rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .grid {
+        padding: 0.5rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    .title {
+        margin: 1rem 0 0 1rem;
+    }
+}
+
+/* For 1080p screens */
+@media (min-width: 1920px) {
+    .grid {
+        padding: 5rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .title {
+        margin: 1rem 0 0 5rem;
+    }
+}
+
+/* For ultra-wide screens */
+@media (min-width: 2560px) {
+    .grid {
+        padding: 7rem;
+    }
+
+    .card {
+        padding: 3rem;
+    }
+
+    .title {
+        margin: 1rem 0 0 7rem;
+    }
+}
