@@ -2,39 +2,99 @@ import styles from "../page.module.css";
 import css from "../components/projects.module.css";
 import glow from "../glowEffect.module.css" ;
 import foodPic from "../images/foodapp.png";
+import imgRecog from "../images/img-recog-2.png";
+import speedOfBytes from "../images/speed-of-bytes.png";
 import Image from "next/image";
+import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
+import {Box} from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
 
 const Projects = () => {
     return (
         <section className={`${styles.section} ${glow.glowBlueHoverProjects}`}>
             <h1 className={css.title}>Projects</h1>
             <div className={css.grid}>
-                <a href="https://food-next-js-seven.vercel.app/" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 1" target="_blank" rel="noopener noreferrer">
-                    <h2>Food App [Next.js]</h2>
+                {/*TODO: create an array to map all projects*/}
+                <a href="https://food-next-js-seven.vercel.app/" className={`${css.card} ${glow.glowPinkHover}`}
+                   aria-label="Link to Food App" target="_blank" rel="noopener noreferrer">
+                    <h2>Food App<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
+                    <p>[Next.js, AWS, S3, RDS, MySQL]</p>
                     <Image
                         className={css.image}
                         src={foodPic}
                         alt="Preview of Food App"
                         layout="responsive"
                         objectFit="cover"
-                        width={700} // or the width of your choice
-                        height={400} // or the height of your choice
+                        width={700}
+                        height={400}
                     />
                 </a>
-
-                <a href="/project2" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 2">
-                    <h3>Image Recognition</h3>
-                    <p>Working on Page</p>
+                <a href="https://github.com/joesatriani10/Image-Recognition"
+                   className={`${css.card} ${glow.glowPinkHover}`}
+                   aria-label="Link to Image Recognition" target="_blank" rel="noopener noreferrer">
+                    <h2>Image Recognition<GitHubIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
+                    <p>[C#, WinForms, Net 8, ML.NET MB]</p>
+                    <Image
+                        className={css.image}
+                        src={imgRecog}
+                        alt="Preview of Food App"
+                        layout="responsive"
+                        objectFit="cover"
+                        width={700}
+                        height={400}
+                    />
                 </a>
-
-                <a href="/project3" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 3">
-                    <h3>Inno Setup Installer</h3>
-                    <p>Working on Page</p>
+                <a href="/"
+                   className={`${css.card} ${glow.glowPinkHover}`}
+                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
+                    <h2>Speed of Bytes (Under Construction)</h2>
+                    <p>[Next.js, tbd]</p>
+                    <Image
+                        className={css.image}
+                        src={speedOfBytes}
+                        alt="Preview of Speed of Bytes website"
+                        layout="responsive"
+                        objectFit="cover"
+                        width={700}
+                        height={400}
+                    />
                 </a>
-
-                <a href="/project4" className={`${css.card} ${glow.glowPinkHover}`} aria-label="Link to Project 4">
-                    <h3>Recognition</h3>
-                    <p>Working on Page</p>
+                <a href="/"
+                   className={`${css.card} ${glow.glowPinkHover}`}
+                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
+                    <h2>(Under Construction)</h2>
+                    <p>[Technologies used]</p>
+                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem'}}>
+                        <HandymanOutlinedIcon sx={{fontSize: 100}}/>
+                    </Box>
+                    {/*<Image*/}
+                    {/*    className={css.image}*/}
+                    {/*    src={}*/}
+                    {/*    alt="Preview of REPLACE ME"*/}
+                    {/*    layout="responsive"*/}
+                    {/*    objectFit="cover"*/}
+                    {/*    width={700}*/}
+                    {/*    height={400}*/}
+                    {/*/>*/}
+                </a>
+                <a href="/"
+                   className={`${css.card} ${glow.glowPinkHover}`}
+                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
+                    <h2>(Under Construction)</h2>
+                    <p>[Technologies used]</p>
+                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem'}}>
+                        <HandymanOutlinedIcon sx={{fontSize: 100}}/>
+                    </Box>
+                    {/*<Image*/}
+                    {/*    className={css.image}*/}
+                    {/*    src={}*/}
+                    {/*    alt="Preview of REPLACE ME"*/}
+                    {/*    layout="responsive"*/}
+                    {/*    objectFit="cover"*/}
+                    {/*    width={700}*/}
+                    {/*    height={400}*/}
+                    {/*/>*/}
                 </a>
             </div>
         </section>

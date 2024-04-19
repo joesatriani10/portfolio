@@ -6,11 +6,15 @@
 }
 
 .card {
-    padding: 1rem;
-    border: 5px solid #242323FF; /* Light gray border */
+    padding: 0.5rem;
+    border: 3px solid #242323FF; /* Light gray border */
     background: #242323FF;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
 
 .card h3 {
@@ -22,10 +26,6 @@
 .card p {
     font-size: 1rem;
     @apply text-zinc-400;
-}
-
-.card:hover {
-    transform: scale(1.1);
 }
 
 .image {
@@ -49,10 +49,6 @@
         padding: 1rem;
     }
 
-    .card {
-        padding: 0.5rem;
-    }
-
     .title {
         margin: 1rem 0 0 1rem;
     }
@@ -61,10 +57,6 @@
 /* For mobile devices */
 @media (max-width: 768px) {
     .grid {
-        padding: 0.5rem;
-    }
-
-    .card {
         padding: 0.5rem;
     }
 
@@ -79,10 +71,6 @@
         padding: 5rem;
     }
 
-    .card {
-        padding: 2rem;
-    }
-
     .title {
         margin: 1rem 0 0 5rem;
     }
@@ -90,15 +78,13 @@
 
 /* For ultra-wide screens */
 @media (min-width: 2560px) {
+
     .grid {
         padding: 7rem;
-    }
-
-    .card {
-        padding: 3rem;
     }
 
     .title {
         margin: 1rem 0 0 7rem;
     }
+
 }
