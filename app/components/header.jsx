@@ -4,9 +4,9 @@ import SocialMedia from "@/app/components/social-media";
 
 const Header = () => {
     return (
-        <header className={`${styles.header} ${glow.header}`}>
-            <h1>Angel Montes de Oca</h1>
-            <p>Software Engineer</p>
+        <header className={`${styles.header}`}>
+            <h1 className={glow.glowBlue}>Angel Montes de Oca</h1>
+            <p className={glow.glowPink}>Software Engineer</p>
             <div className={styles.rightContainer}>
                 <SocialMedia/>
             </div>
