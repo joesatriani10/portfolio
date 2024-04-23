@@ -43,6 +43,17 @@
     margin: 1rem 0 0 3rem;
 }
 
+/*For retina displays*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .grid {
+        padding: 7rem;
+    }
+
+    .title {
+        margin: 1rem 0 0 7rem;
+    }
+}
+
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
     .grid {
