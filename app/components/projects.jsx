@@ -2,8 +2,6 @@ import styles from "../page.module.css";
 import css from "../components/projects.module.css";
 import glow from "../glowEffect.module.css" ;
 import Image from "next/image";
-import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
-import {Box} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
 
@@ -42,11 +40,11 @@ const Projects = () => {
                         height={200}
                     />
                 </a>
-                <a href="/"
+                <a href="https://www.speedofbytes.io/"
                    className={`${css.card} ${glow.glowPinkHover}`}
                    aria-label="Link to speedofbytes.io" target="_blank" rel="noopener noreferrer">
-                    <h2>Speed of Bytes (in Development)</h2>
-                    <p>[Next.js, tbd]</p>
+                    <h2>Speed of Bytes (under development)</h2>
+                    <p>[Next.js]</p>
                     <Image
                         className={css.image}
                         src={"/images/speed-of-bytes.png"}
@@ -57,41 +55,20 @@ const Projects = () => {
                         height={200}
                     />
                 </a>
-                <a href="/"
+                <a href="https://cjdatacom.com/"
                    className={`${css.card} ${glow.glowPinkHover}`}
                    aria-label="Link to cjdatacom.com" target="_blank" rel="noopener noreferrer">
                     <h2>cjdatacom.com [re-design]</h2>
                     <p>[WordPress, Beaver Builder/Theme]</p>
-                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem'}}>
-                        <HandymanOutlinedIcon sx={{fontSize: 100}}/>
-                    </Box>
-                    {/*<Image*/}
-                    {/*    className={css.image}*/}
-                    {/*    src={}*/}
-                    {/*    alt="Preview of REPLACE ME"*/}
-                    {/*    layout="responsive"*/}
-                    {/*    objectFit="cover"*/}
-                    {/*    width={700}*/}
-                    {/*    height={400}*/}
-                    {/*/>*/}
-                </a>
-                <a href="/"
-                   className={`${css.card} ${glow.glowPinkHover}`}
-                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
-                    <h2>(Under Construction)</h2>
-                    <p>[Technologies used]</p>
-                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem'}}>
-                        <HandymanOutlinedIcon sx={{fontSize: 100}}/>
-                    </Box>
-                    {/*<Image*/}
-                    {/*    className={css.image}*/}
-                    {/*    src={}*/}
-                    {/*    alt="Preview of REPLACE ME"*/}
-                    {/*    layout="responsive"*/}
-                    {/*    objectFit="cover"*/}
-                    {/*    width={700}*/}
-                    {/*    height={400}*/}
-                    {/*/>*/}
+                    <Image
+                        className={css.image}
+                        src={"/images/cj-data.png"}
+                        alt="Preview of REPLACE ME"
+                        layout="responsive"
+                        objectFit="cover"
+                        width={350}
+                        height={200}
+                    />
                 </a>
             </div>
         </section>
