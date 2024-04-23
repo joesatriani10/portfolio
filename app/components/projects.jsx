@@ -43,7 +43,7 @@ const Projects = () => {
                 <a href="https://www.speedofbytes.io/"
                    className={`${css.card} ${glow.glowPinkHover}`}
                    aria-label="Link to speedofbytes.io" target="_blank" rel="noopener noreferrer">
-                    <h2>Speed of Bytes (under development)</h2>
+                    <h2>Speed of Bytes (under development)<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
                     <p>[Next.js]</p>
                     <Image
                         className={css.image}
@@ -58,7 +58,7 @@ const Projects = () => {
                 <a href="https://cjdatacom.com/"
                    className={`${css.card} ${glow.glowPinkHover}`}
                    aria-label="Link to cjdatacom.com" target="_blank" rel="noopener noreferrer">
-                    <h2>cjdatacom.com [re-design]</h2>
+                    <h2>cjdatacom.com [re-design]<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
                     <p>[WordPress, Beaver Builder/Theme]</p>
                     <Image
                         className={css.image}
