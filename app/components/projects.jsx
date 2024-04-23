@@ -1,9 +1,6 @@
 import styles from "../page.module.css";
 import css from "../components/projects.module.css";
 import glow from "../glowEffect.module.css" ;
-import foodPic from "../images/foodapp.png";
-import imgRecog from "../images/img-recog-2.png";
-import speedOfBytes from "../images/speed-of-bytes.png";
 import Image from "next/image";
 import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
 import {Box} from "@mui/material";
@@ -22,12 +19,12 @@ const Projects = () => {
                     <p>[Next.js, AWS, S3, RDS, MySQL]</p>
                     <Image
                         className={css.image}
-                        src={foodPic}
+                        src={"/images/food-app.png"}
                         alt="Preview of Food App"
                         layout="responsive"
                         objectFit="cover"
-                        width={700}
-                        height={400}
+                        width={350}
+                        height={200}
                     />
                 </a>
                 <a href="https://github.com/joesatriani10/Image-Recognition"
@@ -37,34 +34,34 @@ const Projects = () => {
                     <p>[C#, WinForms, Net 8, ML.NET MB]</p>
                     <Image
                         className={css.image}
-                        src={imgRecog}
-                        alt="Preview of Food App"
+                        src={"/images/image-recognition.png"}
+                        alt="Preview of Image Regonition App"
                         layout="responsive"
                         objectFit="cover"
-                        width={700}
-                        height={400}
+                        width={350}
+                        height={200}
                     />
                 </a>
                 <a href="/"
                    className={`${css.card} ${glow.glowPinkHover}`}
-                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
-                    <h2>Speed of Bytes (Under Construction)</h2>
+                   aria-label="Link to speedofbytes.io" target="_blank" rel="noopener noreferrer">
+                    <h2>Speed of Bytes (in Development)</h2>
                     <p>[Next.js, tbd]</p>
                     <Image
                         className={css.image}
-                        src={speedOfBytes}
+                        src={"/images/speed-of-bytes.png"}
                         alt="Preview of Speed of Bytes website"
                         layout="responsive"
                         objectFit="cover"
-                        width={700}
-                        height={400}
+                        width={350}
+                        height={200}
                     />
                 </a>
                 <a href="/"
                    className={`${css.card} ${glow.glowPinkHover}`}
-                   aria-label="REPLACE ME" target="_blank" rel="noopener noreferrer">
-                    <h2>(Under Construction)</h2>
-                    <p>[Technologies used]</p>
+                   aria-label="Link to cjdatacom.com" target="_blank" rel="noopener noreferrer">
+                    <h2>cjdatacom.com [re-design]</h2>
+                    <p>[WordPress, Beaver Builder/Theme]</p>
                     <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem'}}>
                         <HandymanOutlinedIcon sx={{fontSize: 100}}/>
                     </Box>
