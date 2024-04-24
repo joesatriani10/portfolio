@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "../components/profile.module.css";
-import glow from "../glowEffect.module.css";
-import DownloadResume from "@/app/components/download-resume";
+import styles from "./profile.module.css";
+import glow from "@/app/glowEffect.module.css";
+import DownloadResume from "@/app/components/download-resume/download-resume";
 
 
 const Profile = () => {

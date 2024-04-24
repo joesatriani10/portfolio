@@ -1,7 +1,7 @@
 'use client';
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';
-import glow from "../glowEffect.module.css";
-import styles from "../components/download-resume.module.css";
+import glow from "@/app/glowEffect.module.css";
+import styles from "./download-resume.module.css";
 
 const DownloadResume = () => {
     const handleDownload = async (event) => {

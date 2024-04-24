@@ -1,6 +1,6 @@
-import styles from "@/app/components/experience.module.css";
+import styles from "@/app/components/experience/experience.module.css";
 import glow from "@/app/glowEffect.module.css";
-import JobExperience from "@/app/components/job-experience";
+import JobExperience from "@/app/components/job-experience/job-experience";
 
 const Experience = () => {
 

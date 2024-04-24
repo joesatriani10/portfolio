@@ -1,4 +1,4 @@
-import styles from "@/app/components/job-experience.module.css";
+import styles from "@/app/components/job-experience/job-experience.module.css";
 
 const JobExperience = ({title, company, location, dates, responsibilities}) => {
     return (
