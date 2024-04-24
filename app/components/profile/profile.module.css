@@ -44,15 +44,22 @@
 
 /* For mobile devices */
 @media (max-width: 768px) {
+    .profileContainer {
+        flex-direction: column; /* Stack child elements vertically */
+    }
+
     .profilePicture {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     .profileText {
+        @apply w-5/6; /* Adjust this value to change the width */
         @apply text-xl;
         @apply mt-4;
         @apply mb-4;
+        @apply pl-7;
+        text-align: justify;
     }
 }
 
