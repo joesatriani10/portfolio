@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className={`${styles.header}`}>
             <h1 className={glow.glowBlue}>Angel Montes de Oca</h1>
-            <p className={glow.glowPink}>Software Engineer</p>
+            <p className={glow.glowPink}>Full Stack Developer</p>
             <div className={styles.rightContainer}>
                 <SocialMedia/>
             </div>

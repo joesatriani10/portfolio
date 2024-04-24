@@ -36,22 +36,34 @@
 /* For mobile devices */
 @media (max-width: 768px) {
     .header {
-        padding: 0.5rem;
+        padding: 2rem;
+        @apply flex items-center justify-items-start;
+        flex-direction: column;
+        align-items: center;
     }
 
     .header h1 {
-        @apply text-sm;
+        @apply text-4xl;
         white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .header p {
-        @apply text-sm;
+        @apply text-xl;
         white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .rightContainer {
-    /* fontSize="small" */
-
+        padding: 1.5rem;
+        @apply ml-auto;
+        @apply flex;
+        justify-content: center;
+        width: 100%; /* Adjust as needed */
     }
 }
 
