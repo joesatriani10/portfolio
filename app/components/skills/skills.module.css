@@ -42,15 +42,15 @@
 /* For mobile devices */
 @media (max-width: 768px) {
     .skillsContainer {
-        padding: 2rem;
+        padding: 1.2rem;
     }
 
     .skillsHeader {
-        @apply text-base;
+        @apply text-base text-center;
     }
 
     .skillsList {
-        @apply text-sm;
+        @apply text-lg text-center mx-auto;
     }
 }
 
