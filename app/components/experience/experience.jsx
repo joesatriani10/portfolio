@@ -6,12 +6,12 @@ const Experience = () => {
 
     const softwareExperiences = [
         {
-            title: "Software Engineer and Tech Leader",
+            title: "Software Tech Lead",
             company: "Calibrated Healthcare",
             location: "Ontario, California, USA",
             dates: "11/2021 - 10/2023",
             responsibilities: [
-                "Served as the tech leader for a team of 3 developers for a year on a complex internal application for manage users data which also included a complete Help Desk built-in and reports.",
+                "Served as the tech lead for a team of 3 developers for a year on a complex internal application for manage users data which also included a complete Help Desk built-in and reports.",
                 "Served as a Full Stack Developer, responsible of creating the REST API and security the application.",
                 "Setup and maintain the whole instance of GitLab, pipelines, runners and servers for front and back end projects."
             ]

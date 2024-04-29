@@ -18,7 +18,7 @@ const Skills = () => {
                 <div className={glow.glowPinkHover}>Net 6</div>
                 <div className={glow.glowPinkHover}>API RESTful</div>
                 <div className={glow.glowPinkHover}>Net Framework 4.8</div>
-                <div className={glow.glowPinkHover}>UI/UI Design</div>
+                <div className={glow.glowPinkHover}>UI/UX Design Principles</div>
                 <div className={glow.glowPinkHover}>MySQL</div>
                 <div className={glow.glowPinkHover}>JWT</div>
                 <div className={glow.glowPinkHover}>Entity Framework</div>
@@ -31,6 +31,8 @@ const Skills = () => {
                 <div className={glow.glowPinkHover}>MSSQL</div>
                 <div className={glow.glowPinkHover}>Security</div>
                 <div className={glow.glowPinkHover}>Team Collaboration</div>
+                <div className={glow.glowPinkHover}>AWS RDS</div>
+                <div className={glow.glowPinkHover}>AWS S3</div>
             </div>
         </section>
     );
