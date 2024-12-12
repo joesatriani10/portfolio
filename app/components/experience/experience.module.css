@@ -1,5 +1,5 @@
 .experienceContainer {
-    @apply p-8 bg-gray-800 flex flex-col items-start;
+    @apply p-8 flex flex-col items-start;
     padding: 5rem;
 }
 
