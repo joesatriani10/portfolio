@@ -1,15 +1,19 @@
 .skillsContainer {
-    @apply p-8 flex flex-col items-start;
-    background: #242323FF;
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .skillsHeader {
-    @apply text-xl font-bold mb-4 text-white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .skillsList {
-    @apply list-disc list-inside text-zinc-400;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .skillsGrid {
@@ -31,11 +35,11 @@
     }
 
     .skillsHeader {
-        @apply text-lg;
+        font-size: 1.125rem;
     }
 
     .skillsList {
-        @apply text-base;
+        font-size: 1rem;
     }
 }
 
@@ -46,11 +50,15 @@
     }
 
     .skillsHeader {
-        @apply text-base text-center;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .skillsList {
-        @apply text-lg text-center mx-auto;
+        font-size: 1.125rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -61,11 +69,11 @@
     }
 
     .skillsHeader {
-        @apply text-2xl;
+        font-size: 1.5rem;
     }
 
     .skillsList {
-        @apply text-lg;
+        font-size: 1.125rem;
     }
 }
 
@@ -76,10 +84,10 @@
     }
 
     .skillsHeader {
-        @apply text-3xl;
+        font-size: 1.875rem;
     }
 
     .skillsList {
-        @apply text-xl;
+        font-size: 1.25rem;
     }
 }

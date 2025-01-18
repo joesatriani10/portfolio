@@ -1,12 +1,9 @@
 .footer {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 1.2rem;
-    color: #ffffff;
     padding: 1.2rem;
-    background: radial-gradient(circle, rgb(36, 35, 35) 0%, #19191a 100%);
-    @apply flex items-center justify-items-start;
+    justify-content: center;
 }
 
 .text {

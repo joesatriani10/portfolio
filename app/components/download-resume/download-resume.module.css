@@ -1,10 +1,12 @@
 .downloadContainer {
-    @apply flex items-center justify-center space-x-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .downloadButton {
-    @apply text-zinc-400;
     cursor: pointer;
     max-width: 230px;
 }

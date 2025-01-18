@@ -9,10 +9,10 @@ const Profile = () => {
 
     return (<>
             <section className={`${styles.profileContainer} ${glow.glowProfile}`}>
-                <div className={styles.profilePictureContainer}>
-                    <Image src={"/images/angel.jpg"} alt="Angel Montes de Oca photo"
-                           className={`${styles.profilePicture}`} width={512}
-                           height={512}/>
+                <div>
+                    <Image src={"/images/angel.webp"} alt="Angel Montes de Oca photo"
+                           className={`${styles.profilePicture}`} width={256}
+                           height={256}/>
                 </div>
                 <p className={`${styles.profileText}`}><strong className={glow.glowBlueHover}>I&apos;m a Full Stack Developer </strong>
                     with a passion for creating beautiful and functional websites and

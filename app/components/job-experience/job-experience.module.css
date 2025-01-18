@@ -1,15 +1,14 @@
-.responsibilitiesText {
-    @apply text-zinc-400;
-}
-
 .jobText {
-    @apply text-3xl text-zinc-400;
+    font-size: 1.875rem;
 }
 
 .jobExperience {
-    @apply p-4 bg-gray-700 rounded-lg mb-6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
 }
+
 .responsibilityItem {
     text-indent: -1em;
     padding-left: 1em;
