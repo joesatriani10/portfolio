@@ -1,12 +1,12 @@
+import '../../global.css';
 import styles from './header.module.css';
-import glow from '@/app/glowEffect.module.css';
 import SocialMedia from "@/app/components/social-media/social-media";
 
 const Header = () => {
     return (
         <header className={`${styles.header}`}>
-            <h1 className={glow.glowBlue}>Angel Montes de Oca</h1>
-            <p className={glow.glowPink}>Full Stack Developer</p>
+            <h1>Angel Montes de Oca</h1>
+            <p>Full Stack Developer</p>
             <div className={styles.rightContainer}>
                 <SocialMedia/>
             </div>

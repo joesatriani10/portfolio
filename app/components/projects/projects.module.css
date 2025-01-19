@@ -1,19 +1,28 @@
+.header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .grid {
     display: grid;
-    padding: 3rem;
+    padding: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 3rem; /* Increase the gap between the cards */
+    gap: 1.5rem; /* Increase the gap between the cards */
 }
 
-.container {
-    padding: 2.5rem;
+.container{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #D3D3D3; /* Light Grayish */
 }
-
 .card {
     padding: 0.5rem;
-    border: 1px solid rgba(72, 76, 78, 0.45); /* Light gray border */
+    /*border: 1px solid rgba(72, 76, 78, 0.45); !* Light gray border *!*/
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    background: #F0F0F0;
 }
 
 .link {
@@ -27,7 +36,7 @@
 }
 
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .card h3 {

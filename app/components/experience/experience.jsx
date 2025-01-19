@@ -1,5 +1,5 @@
+import '../../global.css';
 import styles from "@/app/components/experience/experience.module.css";
-import glow from "@/app/glowEffect.module.css";
 import JobExperience from "@/app/components/job-experience/job-experience";
 
 const Experience = () => {
@@ -67,7 +67,7 @@ const Experience = () => {
     ];
 
     return (
-        <section className={`${styles.experienceContainer} ${glow.section}`}>
+        <section className={`${styles.experienceContainer}`}>
             <h3 className={`${styles.experienceHeader}`}>Consultant Experience:</h3>
             {consultantExperiences.map((experience, index) => (
                 <JobExperience key={index} {...experience} />

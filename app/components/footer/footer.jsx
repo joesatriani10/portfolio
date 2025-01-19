@@ -1,4 +1,5 @@
 'use client';
+import '../../global.css';
 import styles from './footer.module.css';
 
 const Footer = () => {

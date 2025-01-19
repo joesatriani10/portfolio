@@ -1,6 +1,6 @@
 'use client';
+import '../../global.css';
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';
-import glow from "@/app/glowEffect.module.css";
 import styles from "./download-resume.module.css";
 
 const DownloadResume = () => {
@@ -18,7 +18,7 @@ const DownloadResume = () => {
 
     return(
         <div className={styles.downloadContainer}>
-            <p className={`${glow.glowYellowHover} ${styles.downloadButton}`} onClick={handleDownload}>Download my
+            <p className={`${styles.downloadButton}`} onClick={handleDownload}>Download my
                 latest resume</p>
             <PictureAsPdfOutlinedIcon/>
         </div>

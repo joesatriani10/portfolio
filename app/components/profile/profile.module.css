@@ -5,7 +5,7 @@
     border-radius: 50%; /* Make the picture circular */
     object-fit: cover; /* Make the picture cover the entire div */
     margin-top: 5rem; /* Add some space between the picture and the text */
-    margin-bottom: 5rem;
+    margin-bottom:5rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -19,14 +19,10 @@
 .profileText {
     width: 50%;
     font-size: 1.5rem;
-    color: #a1a1aa;
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
-.profileText strong {
-    color: #ffffff;
-}
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
     .profilePicture {

@@ -1,5 +1,5 @@
 .header {
-    padding: 3rem;
+    padding-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -10,7 +10,7 @@
 }
 
 .header p {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     font-size: 1.5rem;
 }
 

@@ -1,4 +1,6 @@
 .socialMediaLink {
+    padding-right: 1rem;
+    padding-top: 0.5rem;
     position: relative;
     display: block;
     width: 3.4rem;
@@ -8,7 +10,7 @@
     border-radius: 50%;
     font-size: 1.5rem;
     transition: .5s;
-    margin: 0 0.2rem;
+
 }
 
 .socialMediaLink::before {
