@@ -11,9 +11,19 @@
 
 .card {
     padding: 0.5rem;
-    border: 1px solid #484c4e; /* Light gray border */
+    border: 1px solid rgba(72, 76, 78, 0.45); /* Light gray border */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+}
+
+.link {
+    color: #484c4e; /* Unvisited link color */
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #484c4e; /* Same color as unvisited link */
+    text-decoration: none;
 }
 
 .card:hover {
@@ -42,7 +52,6 @@
 .title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #ffffff;
     margin: 1rem 0 0 3rem;
 }
 

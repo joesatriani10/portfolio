@@ -28,6 +28,16 @@
     transform: scale(1.1);
 }
 
+.link {
+    color: #484c4e; /* Unvisited link color */
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #484c4e; /* Same color as unvisited link */
+    text-decoration: none;
+}
+
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
     .socialMediaLink {
