@@ -11,9 +11,9 @@ const Experience = () => {
             location: "Ontario, California, USA",
             dates: "11/2021 - 10/2023",
             responsibilities: [
-                "Served as the tech lead for a team of 3 developers for a year on a complex internal application for manage users data which also included a complete Help Desk built-in and reports.",
-                "Served as a Full Stack Developer, responsible of creating the REST API and security the application.",
-                "Setup and maintain the whole instance of GitLab, pipelines, runners and servers for front and back end projects."
+                "Led a team of 3 developers in building a user management and Help Desk system.",
+                "Developed and secured RESTful APIs using .NET and JWT authentication.",
+                "Set up and maintained GitLab CI/CD pipelines, runners, and server infrastructure."
             ]
         },
         {
@@ -22,9 +22,11 @@ const Experience = () => {
             location: "Ontario, California, USA",
             dates: "11/2018 - 10/2021",
             responsibilities: [
-                "Created a CMS and UB (Medical Forms) recognition Desktop Software using ML.Net Model Builder that lead to improve the overall performance by replacing a legacy OCR system and reduce manual batch crafting by 25%.",
-                "Performed maintenance and optimization of company's legacy core operational software.",
-                "Played a key role in server management, regularly monitoring health and performance of Windows and Linux VM servers and applications."
+                "Developed a CMS and medical form recognition desktop application using ML.Net,\n" +
+                "reducing manual batch processing by 25%.",
+                "Maintained and optimized legacy .NET (3.5 - 4.8) core applications.",
+                "Managed and monitored Windows and Linux servers for application performance and\n" +
+                "security."
             ]
         },
         {
@@ -33,8 +35,9 @@ const Experience = () => {
             location: "Autlan, Jalisco, Mexico",
             dates: "01/2017 - 10/2018",
             responsibilities: [
-                "Designed and developed robust software application installers for multiple platforms: MacOS, Windows and Linux.",
-                "Design and build internal software tools to support the help desk engineers, streamlining their troubleshooting and support processes."
+                "Built cross-platform software installers for MacOS, Windows, and Linux.",
+                "Developed internal troubleshooting tools to assist the Help Desk team.",
+                "Created a Java API-based portal for database optimization and maintenance."
             ]
         }
         // Add other experiences here...
@@ -42,15 +45,16 @@ const Experience = () => {
 
     const consultantExperiences = [
         {
-            title: "Information Technology Consultant (Weekends)",
+            title: "Information Technology Consultant (Part time)",
             company: "CJ DATA COM, INC.",
             location: "Downey, California, USA",
             dates: "08/2019 - Present",
             responsibilities: [
-                "System administration and maintenance of Windows servers.",
+                "Installed and configured network infrastructures, computer systems, and security protocols.",
                 "Provided technical support to clients on-site and remotely.",
                 "Designed and implemented computer infrastructure for small businesses.",
-                "CCTV installation and configuration."
+                "CCTV installation and configuration.",
+                "Performed hardware and software upgrades, optimizing system performance."
             ]
         },
         {
@@ -59,9 +63,10 @@ const Experience = () => {
             location: "Rialto, California, USA",
             dates: "11/2023 - Present",
             responsibilities: [
-                "Web development and design for small businesses.",
-                "Desktop Development and design for small businesses.",
-                "Provided technical support to clients on-site and remotely.",
+                "Designed and developed custom web applications using C#, JavaScript, ReactJS.",
+                "Provided technical consulting and troubleshooting for client software implementations.",
+                "Built custom security solutions, including endpoint protection and firewall configuration.",
+                "Designed, deployed, and managed IT systems, including administration and maintenance."
             ]
         }
     ];
