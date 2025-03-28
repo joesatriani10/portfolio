@@ -1,11 +1,22 @@
 .footer {
+    background: transparent;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 1.2rem;
-    padding: 1.2rem;
     justify-content: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    position: relative;
 }
 
 .text {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    color: var(--primary-text-color);
+    opacity: 0.8;
+    transition: color 0.3s ease;
+}
+
+.text:hover {
+    color: #FF2EFF;
+    text-shadow: 0 0 6px #d3adff;
 }

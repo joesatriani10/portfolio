@@ -1,101 +1,79 @@
 .header {
-    padding-left: 1rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.header h1 {
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.cyberpunkTitle {
     font-size: 2.25rem;
+    color: var(--primary-text-color);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
 }
 
-.header p {
-    padding-left: 0.5rem;
+
+.cyberpunkTitle:hover {
+    color: #FF2EFF;
+    text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
+}
+
+.cyberpunkSubtitle {
     font-size: 1.5rem;
+    color: var(--primary-text-color);
+    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.cyberpunkSubtitle:hover {
+    color: #00CFFF;
+    text-shadow: 0 0 4px #FF2EFF;
 }
 
 .rightContainer {
-    margin-left: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* For tablets and small desktops */
-@media (max-width: 1024px) {
-    .header {
-        padding: 2rem;
-    }
-
-    .header h1 {
-        font-size: 1.875rem;
-    }
-
-    .header p {
-        font-size: 1.5rem;
-    }
-}
-
-/* For mobile devices */
+/* Mobile */
 @media (max-width: 768px) {
     .header {
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         flex-direction: column;
-    }
-
-    .header h1 {
-        font-size: 2.25rem;
-        white-space: nowrap;
+        align-items: center;
         text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
-    .header p {
+    .cyberpunkTitle {
+        font-size: 2rem;
+    }
+
+    .cyberpunkSubtitle {
         font-size: 1.25rem;
-        white-space: nowrap;
-        text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
     .rightContainer {
-        padding: 1.5rem;
-        margin-left: auto;
-        display: flex;
-        justify-content: center;
         width: 100%;
+        padding-top: 1rem;
+        justify-content: center;
     }
 }
 
-/* For 1080p screens */
+/* Large screens */
 @media (min-width: 1920px) {
-    .header {
-        padding: 4rem;
-    }
-
-    .header h1 {
+    .cyberpunkTitle {
         font-size: 3rem;
     }
 
-    .header p {
-        font-size: 2.25rem;
+    .cyberpunkSubtitle {
+        font-size: 2rem;
     }
 }
-
-/* For ultra-wide screens */
-@media (min-width: 2560px) {
-    .header {
-        padding: 5rem;
-    }
-
-    .header h1 {
-        font-size: 3.75rem;
-    }
-
-    .header p {
-        font-size: 3rem;
-    }
-}
-

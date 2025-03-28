@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "autoprefixer": "^10.4.19",
+    "framer-motion": "^12.6.2",
     "next": "^15.1.5",
     "postcss": "^8.4.38",
     "react": "^18",

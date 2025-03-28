@@ -16,14 +16,14 @@ const DownloadResume = () => {
         URL.revokeObjectURL(blobURL);
     };
 
-    return(
+    return (
         <div className={styles.downloadContainer}>
-            <p className={`${styles.downloadButton}`} onClick={handleDownload}>Download my
-                latest resume</p>
-            <PictureAsPdfOutlinedIcon/>
+            <div className={styles.downloadButton} onClick={handleDownload}>
+                <span>Download my latest resume</span>
+                <PictureAsPdfOutlinedIcon sx={{ fontSize: 28, color: 'inherit' }} />
+            </div>
         </div>
     );
-
-}
+};
 
 export default DownloadResume;

@@ -1,15 +1,50 @@
-.jobText {
-    font-size: 1.875rem;
+.jobExperience {
+    background-color: rgba(240, 240, 243, 0.65);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    color: var(--primary-text-color);
+    opacity: 0.9;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.02);
 }
 
-.jobExperience {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
+.jobExperience:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 10px #FF2EFF, 0 0 20px #00CFFF;
+    text-shadow: 0 0 4px #d3adff;
+}
+
+.jobExperience h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--primary-text-color);
+    line-height: 1.4;
+    text-shadow: none;
 }
 
 .responsibilityItem {
+    font-size: 0.95rem;
+    color: var(--primary-text-color);
+    text-shadow: none;
     text-indent: -1em;
     padding-left: 1em;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .jobExperience {
+        padding: 1rem;
+    }
+
+    .jobExperience h4 {
+        font-size: 1rem;
+    }
+
+    .responsibilityItem {
+        font-size: 0.9rem;
+    }
 }

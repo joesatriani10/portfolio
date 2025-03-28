@@ -1,80 +1,107 @@
-
-.profilePicture {
-    width: 200px; /* Adjust this value to change the width */
-    height: 200px; /* Adjust this value to change the height */
-    border-radius: 50%; /* Make the picture circular */
-    object-fit: cover; /* Make the picture cover the entire div */
-    margin-top: 5rem; /* Add some space between the picture and the text */
-    margin-bottom:5rem;
-    transition: transform 0.3s ease-in-out;
-}
-
 .profileContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /*Initial Animation*/
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeInProfilePicture 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInProfilePicture {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.profilePicture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00CFFF, 0 0 20px #FF2EFF;
 }
 
 .profileText {
-    width: 50%;
+    max-width: 600px;
     font-size: 1.5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding: 0 1rem;
+    color: var(--primary-text-color);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInProfileText 1s ease-in-out forwards;
+    animation-delay: 0.4s;
 }
 
-/* For tablets and small desktops */
-@media (max-width: 1024px) {
-    .profilePicture {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    .profileText {
-        font-size: 1.5rem;
+/* Hover Cyberpunk Glow */
+.profileText:hover {
+    color: #FF2EFF;
+    text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
+}
+
+/* Barra decorativa lateral estilo HUD */
+.profileText::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(#FF2EFF, #00CFFF);
+    border-radius: 2px;
+    box-shadow: 0 0 6px #FF2EFF;
+}
+
+@keyframes fadeInProfileText {
+    to {
+        opacity: 1;
     }
 }
 
-/* For mobile devices */
+/* Mobile */
 @media (max-width: 768px) {
     .profileContainer {
-        flex-direction: column; /* Stack child elements vertically */
-    }
-
-    .profilePicture {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
     }
 
     .profileText {
-        width: 83.333333%;
         font-size: 1.25rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         padding-left: 1.75rem;
-        text-align: justify;
+        padding-right: 1.75rem;
+    }
+
+    .profilePicture {
+        margin-bottom: 1rem;
+    }
+
+    .profileText::before {
+        display: none;
     }
 }
 
-/* For 1080p screens */
+/* Large Screens */
 @media (min-width: 1920px) {
-    .profilePicture {
-        margin-top: 8rem;
-        margin-bottom: 8rem;
-    }
-
     .profileText {
-        font-size: 1.875rem;
+        font-size: 1.75rem;
     }
-}
 
-/* For ultra-wide screens */
-@media (min-width: 2560px) {
     .profilePicture {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-    }
-
-    .profileText {
-        font-size: 2.25rem;
+        width: 240px;
+        height: 240px;
     }
 }

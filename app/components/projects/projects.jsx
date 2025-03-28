@@ -1,45 +1,94 @@
+'use client';
 import '../../global.css';
-import styles from "./projects.module.css";
-import Image from "next/image";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import styles from './projects.module.css';
+import Image from 'next/image';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
+
+const projects = [
+    {
+        title: 'Speed of Bytes',
+        technologies: ['Next.js', 'React.js', 'MUI', 'EmailJS', 'tsParticles'],
+        image: '/images/speed-of-bytes.webp',
+        demo: 'https://www.speedofbytes.io/',
+        code: null,
+    },
+    {
+        title: 'MERN Full Stack',
+        technologies: ['React.js', 'Vite', 'MongoDB', 'Express.js', 'Redux'],
+        image: '/images/mern-fullstack.webp',
+        demo: 'https://mern-fullstack-frontend-ten.vercel.app/',
+        code: null,
+    },
+    {
+        title: 'Futuristic Login',
+        technologies: ['Next.js', 'CSS'],
+        image: '/images/login.webp',
+        demo: 'https://login-form-next-ruby.vercel.app/',
+        code: null,
+    },
+    {
+        title: 'CJ DATA INC Website',
+        technologies: ['WordPress', 'Beaver Builder/Theme'],
+        image: '/images/cj-data.webp',
+        demo: 'https://cjdatacom.com/',
+        code: null,
+    },
+    {
+        title: 'Food App',
+        technologies: ['Next.js', 'AWS', 'S3', 'RDS', 'MySQL'],
+        image: '/images/food-app.webp',
+        demo: 'https://food-next-js-seven.vercel.app/',
+        code: null,
+    },
+    {
+        title: 'Image Recognition',
+        technologies: ['C#', 'WinForms', '.NET 8', 'ML.NET MB'],
+        image: '/images/image-recognition.webp',
+        demo: 'https://github.com/joesatriani10/Image-Recognition',
+        code: 'https://github.com/joesatriani10/Image-Recognition',
+    },
+];
 
 const Projects = () => {
     return (
-
-        <section className={styles.container}>
-            <h3 className={styles.header}>Projects</h3>
-            <div className={styles.grid}>
-                {/*create an array to map all projects*/}
-                <a href="https://www.speedofbytes.io/" className={`${styles.card} ${styles.link}`} aria-label="Link to speedofbytes.io" target="_blank" rel="noopener noreferrer">
-                    <h2>Speed of Bytes<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
-                    <h5>[Next.js]</h5>
-                    <Image className={styles.image} src={"/images/speed-of-bytes.webp"} alt="Preview of Speed of Bytes website" layout="responsive" objectFit="cover" width={350} height={200}/>
-                </a>
-                <a href="https://login-form-next-ruby.vercel.app/" className={`${styles.card} ${styles.link}`} aria-label="Link to Login" target="_blank" rel="noopener noreferrer">
-                    <h2>Futuristic Login<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
-                    <h5>[Next.js, CSS]</h5>
-                    <Image className={styles.image} src={"/images/login.webp"} alt="Preview of Login" layout="responsive" objectFit="cover" width={350} height={200}/>
-                </a>
-                <a href="https://cjdatacom.com/" className={`${styles.card} ${styles.link}`} aria-label="Link to cjdatacom.com" target="_blank" rel="noopener noreferrer">
-                    <h2>CJ DATA INC Website<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
-                    <h5>[WordPress, Beaver Builder/Theme]</h5>
-                    <Image className={styles.image} src={"/images/cj-data.webp"} alt="Preview of Cjdatacom" layout="responsive" objectFit="cover" width={350} height={200}/>
-                </a>
-                <a href="https://food-next-js-seven.vercel.app/" className={`${styles.card} ${styles.link}`} aria-label="Link to Food App" target="_blank" rel="noopener noreferrer">
-                    <h2>Food App<WebOutlinedIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
-                    <h5>[Next.js, AWS, S3, RDS, MySQL]</h5>
-                    <Image className={styles.image} src={"/images/food-app.webp"} alt="Preview of Food App" layout="responsive" objectFit="cover" width={350} height={200}/>
-                </a>
-                <a href="https://github.com/joesatriani10/Image-Recognition" className={`${styles.card} ${styles.link}`} aria-label="Link to Image Recognition" target="_blank" rel="noopener noreferrer">
-                    <h2>Image Recognition<GitHubIcon sx={{fontSize: 20, ml: '0.5rem'}}/></h2>
-                    <h5>[C#, WinForms, Net 8, ML.NET MB]</h5>
-                    <Image className={styles.image} src={"/images/image-recognition.webp"} alt="Preview of Image Regonition App" layout="responsive" objectFit="cover" width={350} height={200}/>
-                </a>
+        <section className={styles.projectsSection}>
+            <div className={styles.projectsContainer}>
+                <h3 className={styles.projectsHeader}>Projects</h3>
+                <div className={styles.grid}>
+                    {projects.map((project, index) => (
+                        <a
+                            key={index}
+                            href={project.demo || project.code}
+                            className={styles.card}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <h2>
+                                {project.title}
+                                {project.demo ? (
+                                    <WebOutlinedIcon sx={{ fontSize: 20, ml: '0.5rem' }} />
+                                ) : (
+                                    <GitHubIcon sx={{ fontSize: 20, ml: '0.5rem' }} />
+                                )}
+                            </h2>
+                            <h5>[{project.technologies.join(', ')}]</h5>
+                            <Image
+                                className={styles.image}
+                                src={project.image}
+                                alt={`Preview of ${project.title}`}
+                                layout="responsive"
+                                objectFit="cover"
+                                width={3900}
+                                height={2512}
+                                quality={70}
+                            />
+                        </a>
+                    ))}
+                </div>
             </div>
         </section>
-
     );
-}
+};
 
 export default Projects;
