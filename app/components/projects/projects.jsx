@@ -25,7 +25,7 @@ const projects = [
         technologies: ['Next.js', 'CSS'],
         image: '/images/login.webp',
         demo: 'https://login-form-next-ruby.vercel.app/',
-        code: null,
+        code: 'https://github.com/joesatriani10/login-form-next',
     },
     {
         title: 'CJ DATA INC Website',
@@ -34,6 +34,27 @@ const projects = [
         demo: 'https://cjdatacom.com/',
         code: null,
     },
+    {
+        title: 'SICAR Installer (Windows)',
+        technologies: ['PascalScript', 'Java', 'Batch'],
+        image: '/images/sicar.webp',
+        demo: 'https://storage.googleapis.com/credible-cab-5917/installers/setupSICARv4.0R190630_MySQL5.6_Online_DA.exe',
+        code: null,
+    },
+    {
+        title: 'SICAR Installer (MacOs)',
+        technologies: ['Java', 'Bash script'],
+        image: '/images/sicar-mac.webp',
+        demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICARv4.0R190630_Online_DA_x64N.dmg',
+        code: null,
+    },
+    // {
+    //     title: 'SICAR Installer (Linux)',
+    //     technologies: ['Java', 'Bash script'],
+    //     image: '/images/sicar-linux.webp',
+    //     demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICAR-Online_4.0_amd64.deb',
+    //     code: null,
+    // },
     {
         title: 'Food App',
         technologies: ['Next.js', 'AWS', 'S3', 'RDS', 'MySQL'],
@@ -48,6 +69,7 @@ const projects = [
         demo: 'https://github.com/joesatriani10/Image-Recognition',
         code: 'https://github.com/joesatriani10/Image-Recognition',
     },
+
 ];
 
 const Projects = () => {
@@ -66,7 +88,7 @@ const Projects = () => {
                         >
                             <h2>
                                 {project.title}
-                                {project.demo ? (
+                                {!project.code ? (
                                     <WebOutlinedIcon sx={{ fontSize: 20, ml: '0.5rem' }} />
                                 ) : (
                                     <GitHubIcon sx={{ fontSize: 20, ml: '0.5rem' }} />
