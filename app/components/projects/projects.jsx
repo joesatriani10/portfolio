@@ -37,7 +37,7 @@ const projects = [
     {
         title: 'SICAR Installer (Windows)',
         technologies: ['PascalScript', 'Java', 'Batch'],
-        image: '/images/sicar.webp',
+        image: '/images/sicar.webp',//
         demo: 'https://storage.googleapis.com/credible-cab-5917/installers/setupSICARv4.0R190630_MySQL5.6_Online_DA.exe',
         code: null,
     },
@@ -48,13 +48,13 @@ const projects = [
         demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICARv4.0R190630_Online_DA_x64N.dmg',
         code: null,
     },
-    // {
-    //     title: 'SICAR Installer (Linux)',
-    //     technologies: ['Java', 'Bash script'],
-    //     image: '/images/sicar-linux.webp',
-    //     demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICAR-Online_4.0_amd64.deb',
-    //     code: null,
-    // },
+    {
+        title: 'SICAR Installer (Linux)',
+        technologies: ['Java', 'Bash script'],
+        image: '/images/sicar-linux.webp',
+        demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICAR-Online_4.0_amd64.deb',
+        code: null,
+    },
     {
         title: 'Food App',
         technologies: ['Next.js', 'AWS', 'S3', 'RDS', 'MySQL'],
