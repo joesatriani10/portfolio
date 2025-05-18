@@ -8,7 +8,7 @@ const JobExperience = ({ title, company, location, dates, responsibilities }) =>
             <h4><strong>{title}</strong> at {company} - {location} ({dates})</h4>
             <ul>
                 {responsibilities.map((responsibility, index) => (
-                    <li key={index} className={styles.responsibilityItem}>- {responsibility}</li>
+                    <li key={index} className={styles.responsibilityItem}>{responsibility}</li>
                 ))}
             </ul>
         </div>
