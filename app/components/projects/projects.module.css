@@ -34,7 +34,8 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
+    align-items: stretch;
 }
 
 .card {
@@ -49,6 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -68,14 +70,14 @@
 }
 
 .card h5 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: rgba(72, 76, 78, 0.75);
-    font-weight: 500;
-    text-align: center;
+    min-height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .image {
+    aspect-ratio: 16/9;
     border-radius: 8px;
     margin-bottom: 1rem;
     object-fit: cover;
@@ -113,8 +115,9 @@
     display: flex;
     gap: 1.25rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: auto;
     width: 100%;
+
 }
 
 .iconLink {
