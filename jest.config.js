@@ -12,6 +12,10 @@ const customJestConfig = {
         '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '<rootDir>/__mocks__/fileMock.js',
     },
     testEnvironment: 'jsdom',
+    collectCoverageFrom: [
+        'app/components/**/*.{js,jsx}',
+        '!**/*.module.css',
+    ],
 };
 
 module.exports = createJestConfig(customJestConfig);

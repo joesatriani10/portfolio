@@ -108,3 +108,23 @@
         font-size: 0.9rem;
     }
 }
+
+.links {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.iconLink {
+    color: var(--primary-text-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.iconLink:hover {
+    transform: scale(1.2);
+    color: #FF2EFF;
+}

@@ -12,6 +12,7 @@ const SocialMedia = () => {
     return (
         <>
             <a
+                aria-label="LinkedIn"
                 className={styles.socialMediaLink}
                 href="https://www.linkedin.com/in/angel-israel-real-montes-de-oca/"
                 target="_blank"
@@ -21,6 +22,7 @@ const SocialMedia = () => {
             </a>
 
             <a
+                aria-label="GitHub"
                 className={styles.socialMediaLink}
                 href="https://github.com/joesatriani10"
                 target="_blank"
@@ -30,6 +32,7 @@ const SocialMedia = () => {
             </a>
 
             <a
+                aria-label="Youtube"
                 className={styles.socialMediaLink}
                 href="https://www.youtube.com/@AngelMontesdeOca"
                 target="_blank"
