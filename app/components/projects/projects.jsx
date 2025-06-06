@@ -44,7 +44,7 @@ const projects = [
         isDownload: true,
     },
     {
-        title: 'SICAR Installer (MacOs)',
+        title: 'SICAR Installer (MacOS)',
         technologies: ['Java', 'Bash script'],
         image: '/images/sicar-mac.webp',
         demo: 'https://storage.googleapis.com/credible-cab-5917/installers/SICARv4.0R190630_Online_DA_x64N.dmg',
