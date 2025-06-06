@@ -4,7 +4,9 @@ import Footer from '@/app/components/footer/footer';
 describe('Footer', () => {
     it('renders the footer text', () => {
         render(<Footer />);
-        const text = screen.getByText(/© 2025 Angel Montes de Oca/i);
+        const currentYear = new Date().getFullYear();
+        const regex = new RegExp(`© ${currentYear} Angel Montes de Oca`, 'i');
+        const text = screen.getByText(regex);
         expect(text).toBeInTheDocument();
     });
 
