@@ -27,7 +27,7 @@ describe('Projects', () => {
     it('renders all project images with links', () => {
         render(<Projects />);
         const links = screen.getAllByRole('link');
-        // Should match number of projects (6)
+        // Should match number of projects (9)
         expect(links.length).toBeGreaterThanOrEqual(6);
     });
 });
