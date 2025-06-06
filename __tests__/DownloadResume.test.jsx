@@ -8,15 +8,18 @@ global.fetch = jest.fn(() =>
 );
 
 describe('DownloadResume', () => {
+    let originalConsoleError;
     beforeAll(() => {
+        originalConsoleError = console.error;
         jest.spyOn(console, 'error').mockImplementation((msg) => {
             if (msg?.toString().includes('Not implemented: navigation')) return;
-            console.error(msg);
+            originalConsoleError(msg);
         });
     });
 
     afterAll(() => {
         console.error.mockRestore();
+        console.error = originalConsoleError;
     });
 
     beforeEach(() => {
