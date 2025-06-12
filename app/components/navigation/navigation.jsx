@@ -8,7 +8,7 @@ const Navigation = () => {
             <Link href="/" className={styles.link}>/<strong>Profile</strong>/</Link>
             <Link href="/experience" className={styles.link}>/<strong>Experience</strong>/</Link>
             <Link href="/projects" className={styles.link}>/<strong>Projects</strong>/</Link>
-            <Link href="/skills" className={styles.link}>/<strong>Skills &amp; Technologies</strong>/</Link>
+            <Link href="/skills" className={styles.link}>/<strong>Skills</strong>/</Link>
         </nav>
     );
 };

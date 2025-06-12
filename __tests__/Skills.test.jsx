@@ -4,7 +4,7 @@ import Skills from '@/app/components/skills/skills';
 describe('Skills', () => {
     it('renders the section header', () => {
         render(<Skills />);
-        const header = screen.getByText(/Skills & Technologies/i);
+        const header = screen.getByText(/Skills/i);
         expect(header).toBeInTheDocument();
     });
 

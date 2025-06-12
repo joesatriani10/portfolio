@@ -8,7 +8,7 @@ describe('Navigation', () => {
             /Profile/i,
             /Experience/i,
             /Projects/i,
-            /Skills & Technologies/i,
+            /Skills/i,
         ];
         links.forEach((text) => {
             expect(screen.getByText(text)).toBeInTheDocument();
