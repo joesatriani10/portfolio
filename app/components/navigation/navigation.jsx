@@ -4,11 +4,11 @@ import styles from './navigation.module.css';
 
 const Navigation = () => {
     return (
-        <nav className={styles.navbar}>
-            <Link href="/" className={styles.link}>Home</Link>
-            <Link href="/experience" className={styles.link}>Experience</Link>
-            <Link href="/projects" className={styles.link}>Projects</Link>
-            <Link href="/skills" className={styles.link}>Skills &amp; Technologies</Link>
+        <nav className={`${styles.navbar} audiowideText`}>
+            <Link href="/" className={styles.link}>/<strong>Profile</strong>/</Link>
+            <Link href="/experience" className={styles.link}>/<strong>Experience</strong>/</Link>
+            <Link href="/projects" className={styles.link}>/<strong>Projects</strong>/</Link>
+            <Link href="/skills" className={styles.link}>/<strong>Skills &amp; Technologies</strong>/</Link>
         </nav>
     );
 };

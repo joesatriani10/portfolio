@@ -30,13 +30,13 @@ describe('DownloadResume', () => {
 
     it('renders download text', () => {
         render(<DownloadResume />);
-        const downloadText = screen.getByText(/Download my latest resume/i);
+        const downloadText = screen.getByText(/Download my resume/i);
         expect(downloadText).toBeInTheDocument();
     });
 
     it('calls fetch and creates download on click', async () => {
         render(<DownloadResume />);
-        const downloadText = screen.getByText(/Download my latest resume/i);
+        const downloadText = screen.getByText(/Download my resume/i);
 
         fireEvent.click(downloadText);
 

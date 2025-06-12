@@ -5,7 +5,7 @@ describe('Navigation', () => {
     it('renders all navigation links', () => {
         render(<Navigation />);
         const links = [
-            /Home/i,
+            /Profile/i,
             /Experience/i,
             /Projects/i,
             /Skills & Technologies/i,

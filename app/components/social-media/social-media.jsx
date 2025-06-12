@@ -7,7 +7,7 @@ import styles from './social-media.module.css';
 
 const SocialMedia = () => {
     const matches = useMediaQuery('(max-width:768px)');
-    const iconSize = matches ? 25 : 40;
+    const iconSize = matches ? 20 : 35;
 
     return (
         <>

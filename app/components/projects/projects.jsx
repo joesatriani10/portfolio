@@ -79,11 +79,11 @@ const Projects = () => {
     return (
         <section className={styles.projectsSection}>
             <div className={styles.projectsContainer}>
-                <h3 className={styles.projectsHeader}>Projects</h3>
+                <h3 className={`${styles.projectsHeader} audiowideText`}>Projects</h3>
                 <div className={styles.grid}>
                     {projects.map((project, index) => (
                         <div key={index} className={styles.card}>
-                            <h2>{project.title}</h2>
+                            <h2 className={"audiowideText"}>{project.title}</h2>
                             <h5>[{project.technologies.join(', ')}]</h5>
                             <Image
                                 className={styles.image}

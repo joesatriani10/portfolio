@@ -1,5 +1,4 @@
 'use client';
-import '../../global.css';
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';
 import styles from "./download-resume.module.css";
 
@@ -18,8 +17,8 @@ const DownloadResume = () => {
 
     return (
         <div className={styles.downloadContainer}>
-            <div className={styles.downloadButton} onClick={handleDownload}>
-                <span>Download my latest resume</span>
+            <div className={`${styles.downloadButton} audiowideText`} onClick={handleDownload}>
+                <span>Download my resume</span>
                 <PictureAsPdfOutlinedIcon sx={{ fontSize: 28, color: 'inherit' }} />
             </div>
         </div>

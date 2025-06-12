@@ -73,11 +73,11 @@ const Experience = () => {
 
     return (
         <section className={`${styles.experienceContainer}`}>
-            <h3 className={`${styles.experienceHeader}`}>Consultant Experience:</h3>
+            <h2 className={`${styles.experienceHeader} audiowideText`}>Consultant Experience:</h2>
             {consultantExperiences.map((experience, index) => (
                 <JobExperience key={index} {...experience} />
             ))}
-            <h3 className={`${styles.experienceHeader}`}>Software Experience:</h3>
+            <h3 className={`${styles.experienceHeader} audiowideText`}>Software Experience:</h3>
             {softwareExperiences.map((experience, index) => (
                 <JobExperience key={index} {...experience} />
             ))}

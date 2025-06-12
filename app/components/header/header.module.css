@@ -1,5 +1,5 @@
 .header {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,13 +9,13 @@
 .textContainer {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.15rem;
 }
 
 .cyberpunkTitle {
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
     position: relative;
 }
 
@@ -23,13 +23,6 @@
 .cyberpunkTitle:hover {
     color: #FF2EFF;
     text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
-}
-
-.cyberpunkSubtitle {
-    font-size: 1.5rem;
-    color: var(--primary-text-color);
-    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .cyberpunkSubtitle:hover {
@@ -64,16 +57,5 @@
         width: 100%;
         padding-top: 1rem;
         justify-content: center;
-    }
-}
-
-/* Large screens */
-@media (min-width: 1920px) {
-    .cyberpunkTitle {
-        font-size: 3rem;
-    }
-
-    .cyberpunkSubtitle {
-        font-size: 2rem;
     }
 }

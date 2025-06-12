@@ -6,10 +6,10 @@ const Skills = () => {
     return (
         <section className={styles.skillsSection}>
             <div className={styles.skillsContainer}>
-                <h3 className={styles.skillsHeader}>Skills & Technologies</h3>
+                <h3 className={`${styles.skillsHeader} audiowideText`}>Skills & Technologies</h3>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Programming</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Programming</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>C#</div>
                         <div className={styles.card}>JavaScript</div>
@@ -19,7 +19,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Frontend</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Frontend</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>ReactJS</div>
                         <div className={styles.card}>Next.js</div>
@@ -30,7 +30,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Backend</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Backend</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>.NET 6</div>
                         <div className={styles.card}>.NET Framework 4.8</div>
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Databases</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Databases</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>MSSQL</div>
                         <div className={styles.card}>MySQL</div>
@@ -52,7 +52,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Security & DevOps</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Security & DevOps</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>JWT</div>
                         <div className={styles.card}>Data Encryption</div>
@@ -63,7 +63,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Cloud & Infrastructure</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Cloud & Infrastructure</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>AWS S3</div>
                         <div className={styles.card}>GitLab (Pipelines, Runners, Servers)</div>
@@ -73,7 +73,7 @@ const Skills = () => {
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={styles.subtitle}>Software Design</h4>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Software Design</h4>
                     <div className={styles.grid}>
                         <div className={styles.card}>System Design</div>
                         <div className={styles.card}>Software Architecture</div>

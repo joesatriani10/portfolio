@@ -17,7 +17,7 @@
     /*Initial Animation*/
     opacity: 0;
     transform: scale(0.95);
-    animation: fadeInProfilePicture 1s ease-out forwards;
+    animation: fadeInProfilePicture 0.5s ease-out forwards;
     animation-delay: 0.2s;
 }
 
@@ -42,8 +42,8 @@
     position: relative;
     line-height: 1.6;
     opacity: 0;
-    animation: fadeInProfileText 1s ease-in-out forwards;
-    animation-delay: 0.4s;
+    animation: fadeInProfileText 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
 }
 
 /* Hover Cyberpunk Glow */
