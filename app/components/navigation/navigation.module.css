@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+.link {
+    color: var(--primary-text-color);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+    color: #FF2EFF;
+    text-shadow: 0 0 6px #d3adff, 0 0 10px #00CFFF;
+}
