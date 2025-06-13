@@ -25,11 +25,12 @@ This is my personal portfolio built with [Next.js](https://nextjs.org/) and cust
 
 ---
 
-## 🧪 Testing
+## 🧪 Linting & Testing
 
-Run all tests with:
+Run the linter and all unit tests with:
 
 ```bash
+npm run lint
 npm test
 ```
 
@@ -41,6 +42,8 @@ npm test
 ---
 
 ## 🛠 Getting Started
+
+This project is built with Node.js; Node 20 LTS or later is recommended.
 
 Install dependencies:
 
