@@ -21,14 +21,13 @@
 
 
 .cyberpunkTitle:hover {
-    color: #FF2EFF;
-    text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
+    color: #930EFF;
+    text-shadow:
+            0 0 4px #b388ff,
+            0 0 8px #c084fc,
+            0 0 14px #930EFF;
 }
 
-.cyberpunkSubtitle:hover {
-    color: #00CFFF;
-    text-shadow: 0 0 4px #FF2EFF;
-}
 
 .rightContainer {
     display: flex;

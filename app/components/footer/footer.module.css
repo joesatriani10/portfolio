@@ -17,6 +17,6 @@
 }
 
 .text:hover {
-    color: #FF2EFF;
-    text-shadow: 0 0 6px #d3adff;
+    color: #930EFF;
+    text-shadow: 0 0 6px #c084fc; /* Lavanda clara como glow */
 }

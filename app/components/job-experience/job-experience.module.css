@@ -12,9 +12,10 @@
 
 .jobExperience:hover {
     transform: scale(1.015);
-    box-shadow: 0 0 10px #FF2EFF, 0 0 20px #00CFFF;
-    text-shadow: 0 0 4px #d3adff;
+    box-shadow: 0 0 10px #b388ff, 0 0 20px #930EFF;
+    text-shadow: 0 0 4px #c084fc;
 }
+
 
 .jobExperience h4 {
     font-size: 1.125rem;
@@ -47,4 +48,9 @@
     .responsibilityItem {
         font-size: 0.9rem;
     }
+}
+
+.noBullets {
+    list-style-type: none;
+    padding-left: 0;
 }

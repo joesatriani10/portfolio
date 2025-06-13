@@ -17,6 +17,17 @@
 }
 
 .link:hover {
+    color: #930EFF;
+    text-shadow: 0 0 6px #c084fc; /* Lavanda clara como glow */
+}
+
+.linkOpt {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.linkOpt:hover {
     color: #FF2EFF;
     text-shadow: 0 0 6px #d3adff;
 }

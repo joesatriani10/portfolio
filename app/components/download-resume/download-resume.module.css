@@ -29,14 +29,14 @@
 
 /* Icon glow + spin */
 .downloadButton:hover {
-    color: #FF2EFF;
-    text-shadow: 0 0 6px #d3adff, 0 0 10px #00CFFF;
+    color: #930EFF;
+    text-shadow: 0 0 6px #c084fc, 0 0 10px #b388ff;
     transform: scale(1.05);
 }
 
 .downloadButton:hover svg {
-    color: #00CFFF;
-    text-shadow: 0 0 4px #FF2EFF;
+    color: #930EFF;
+    text-shadow: 0 0 4px #b388ff;
     animation: iconSpin 0.6s ease-in-out;
 }
 

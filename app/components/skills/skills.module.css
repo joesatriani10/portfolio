@@ -23,11 +23,12 @@
     font-weight: 600;
     margin-bottom: 2rem;
     color: var(--primary-text-color);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .skillsHeader:hover {
     color: #930EFF;
+    text-shadow: 0 0 4px #c084fc, 0 0 8px #930EFF;
 }
 
 .category {
@@ -59,7 +60,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    transition:
+            transform 0.3s ease,
+            color 0.3s ease,
+            box-shadow 0.3s ease,
+            text-shadow 0.3s ease;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(6px);
     cursor: default;
@@ -69,7 +74,10 @@
     color: #930EFF;
     background-color: rgba(255, 255, 255, 0.8);
     transform: scale(1.05);
-    box-shadow: 0 0 10px #FF2EFF, 0 0 20px #00CFFF;
+    box-shadow:
+            0 0 10px #b388ff,
+            0 0 20px #930EFF;
+    text-shadow: 0 0 4px #c084fc;
 }
 
 /* Responsive */

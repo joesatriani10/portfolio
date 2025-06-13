@@ -4,6 +4,17 @@
     top: 0;
     height: 100%;
     width: 4px;
+    background: linear-gradient(#b388ff, #930EFF); /* lavanda → morado eléctrico */
+    border-radius: 2px;
+    box-shadow: 0 0 6px #b388ff;
+}
+
+.cyberBarOpt {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    height: 100%;
+    width: 4px;
     background: linear-gradient(#FF2EFF, #00CFFF);
     border-radius: 2px;
     box-shadow: 0 0 6px #FF2EFF;

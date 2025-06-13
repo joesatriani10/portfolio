@@ -10,9 +10,12 @@
 }
 
 .socialMediaLink:hover {
-    color: #FF2EFF;
-    text-shadow: 0 0 6px #d3adff, 0 0 10px #00CFFF;
-    transform: scale(1.1);
+    color: #930EFF;
+    text-shadow:
+            0 0 4px #b388ff,
+            0 0 8px #c084fc,
+            0 0 14px #930EFF;
+    transform: scale(1.2);
 }
 
 /* Responsive tweaks */

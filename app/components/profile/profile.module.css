@@ -34,7 +34,9 @@
 
 .profilePicture:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #00CFFF, 0 0 20px #FF2EFF;
+    box-shadow:
+            0 0 10px #b388ff,
+            0 0 20px #930EFF;
 }
 
 .profileText {
@@ -53,12 +55,26 @@
 
 /* Hover Cyberpunk Glow */
 .profileText:hover {
-    color: #FF2EFF;
-    text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
+    color: #930EFF;
+    text-shadow:
+            0 0 6px #c084fc,   /* lavanda clara */
+            0 0 12px #b388ff;  /* lavanda intensa */
 }
 
 /* HUD style decorative side bar */
 .profileText::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(#b388ff, #930EFF);
+    border-radius: 2px;
+    box-shadow: 0 0 6px #b388ff;
+}
+
+.profileTextOpt::before {
     content: '';
     position: absolute;
     left: -8px;
