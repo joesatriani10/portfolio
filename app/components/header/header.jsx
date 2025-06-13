@@ -14,6 +14,7 @@ const Header = () => {
             </div>
             <div className={styles.rightContainer}>
                 <SocialMedia />
+                <span style={{ margin: '0 0.75rem', opacity: 0.6 }}>|</span>
                 <DarkModeToggle />
             </div>
         </div>

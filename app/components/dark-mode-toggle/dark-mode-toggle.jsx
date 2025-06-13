@@ -36,7 +36,7 @@ const DarkModeToggle = () => {
             onClick={toggleTheme}
             type="button"
         >
-            {isDark ? <>Toggle Light <LightModeIcon /></> : <>Toggle Dark <DarkModeIcon /></>}
+            {isDark ? <LightModeIcon titleAccess="Switch to light mode" /> : <DarkModeIcon titleAccess="Switch to dark mode" />}
         </button>
     );
 };

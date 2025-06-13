@@ -2,8 +2,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    padding: 0.25rem;
+    font-size: 1rem;
+    padding: 0.05rem;
     margin-right: 1rem;
     color: var(--primary-text-color);
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
@@ -21,13 +21,13 @@
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .socialMediaLink {
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-right: 0.75rem;
     }
 }
 
 @media (min-width: 1920px) {
     .socialMediaLink {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
