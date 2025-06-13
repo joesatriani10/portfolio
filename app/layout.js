@@ -1,6 +1,5 @@
 import './global.css';
 import { Inter } from "next/font/google";
-import Navigation from "@/app/components/navigation/navigation";
 import Divider from "@/app/components/divider/divider";
 import Footer from "@/app/components/footer/footer";
 import Header from "@/app/components/header/header";
@@ -14,7 +13,6 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
         <CustomCursor />
         <Header />
-        <Navigation />
         <Divider />
         {children}
         <Divider />

@@ -14,9 +14,12 @@ describe('Header', () => {
         expect(links.length).toBeGreaterThanOrEqual(3);
 
         expect(links[0]).toHaveAttribute('href', expect.stringContaining('/'));
-        expect(links[1]).toHaveAttribute('href', expect.stringContaining('linkedin.com'));
-        expect(links[2]).toHaveAttribute('href', expect.stringContaining('github.com'));
-        expect(links[3]).toHaveAttribute('href', expect.stringContaining('youtube.com'));
+        // TODO: Add Navigation
+        expect(links[5]).toHaveAttribute('href', expect.stringContaining('linkedin.com'));
+        expect(links[6]).toHaveAttribute('href', expect.stringContaining('github.com'));
+        expect(links[7]).toHaveAttribute('href', expect.stringContaining('youtube.com'));
+        // TODO: Add Separator
+        // TODO: Add Color Mode
     });
 
     it('renders the theme toggle button', () => {
