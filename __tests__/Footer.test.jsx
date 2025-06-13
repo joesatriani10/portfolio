@@ -15,4 +15,11 @@ describe('Footer', () => {
         const divider = screen.getByRole('separator');
         expect(divider).toBeInTheDocument();
     });
+
+    it('renders social media links', () => {
+        render(<Footer />);
+        expect(screen.getByLabelText(/LinkedIn/i)).toBeInTheDocument();
+        expect(screen.getByLabelText(/GitHub/i)).toBeInTheDocument();
+        expect(screen.getByLabelText(/Youtube/i)).toBeInTheDocument();
+    });
 });

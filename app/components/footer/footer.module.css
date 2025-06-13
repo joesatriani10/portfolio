@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 0.5rem;
     gap: 1rem;
     position: relative;
 }
@@ -19,4 +19,15 @@
 .text:hover {
     color: #930EFF;
     text-shadow: 0 0 6px #c084fc; /* Lavanda clara como glow */
+}
+
+.socialMedia {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .socialMedia {
+        padding-bottom: 0.5rem;
+    }
 }

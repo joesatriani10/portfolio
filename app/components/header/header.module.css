@@ -1,5 +1,5 @@
 .header {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,11 +29,19 @@
 }
 
 
+
 .rightContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .cyberpunkTitle {
+        font-size: 1.75rem;
+    }
 }
 
 /* Mobile */
@@ -45,16 +53,34 @@
     }
 
     .cyberpunkTitle {
-        font-size: 2rem;
-    }
-
-    .cyberpunkSubtitle {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .rightContainer {
         width: 100%;
         padding-top: 1rem;
         justify-content: center;
+    }
+}
+
+/* 1080p screens */
+@media (min-width: 1920px) {
+    .cyberpunkTitle {
+        font-size: 2.5rem;
+    }
+
+    .rightContainer {
+        gap: 1.5rem;
+    }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 2560px) {
+    .cyberpunkTitle {
+        font-size: 3rem;
+    }
+
+    .rightContainer {
+        gap: 2rem;
     }
 }

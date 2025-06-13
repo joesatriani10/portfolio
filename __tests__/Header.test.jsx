@@ -7,20 +7,12 @@ describe('Header', () => {
         expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Angel Montes de Oca/i);
     });
 
-    it('renders social media links', () => {
+    it('does not include social media links', () => {
         render(<Header />);
-
-        const links = screen.getAllByRole('link');
-        expect(links.length).toBeGreaterThanOrEqual(3);
-
-        expect(links[0]).toHaveAttribute('href', expect.stringContaining('/'));
-        // TODO: Add Navigation
-        expect(links[5]).toHaveAttribute('href', expect.stringContaining('linkedin.com'));
-        expect(links[6]).toHaveAttribute('href', expect.stringContaining('github.com'));
-        expect(links[7]).toHaveAttribute('href', expect.stringContaining('youtube.com'));
-        // TODO: Add Separator
-        // TODO: Add Color Mode
+        const links = screen.queryAllByRole('link', { name: /linkedin|github|youtube/i });
+        expect(links.length).toBe(0);
     });
+
 
     it('renders the theme toggle button', () => {
         render(<Header />);
