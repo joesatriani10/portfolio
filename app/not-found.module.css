@@ -1,0 +1,27 @@
+.notFound {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.link {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+    color: #FF2EFF;
+    text-shadow: 0 0 6px #d3adff;
+}
+
+.message {
+    position: relative;
+    padding-left: 1.25rem;
+}
