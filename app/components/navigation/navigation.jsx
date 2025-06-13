@@ -10,7 +10,6 @@ const Navigation = () => {
         `${styles.link} ${pathname === path ? styles.active : ''}`;
 
     return (
-        // TODO: Check why renders different while toggle dark/light mode
         <nav className={`${styles.navbar} audiowideText`}>
             <Link href="/" className={linkClass('/')}>/<strong>Profile</strong>/</Link>
             <Link href="/experience" className={linkClass('/experience')}>/<strong>Experience</strong>/</Link>
