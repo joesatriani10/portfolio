@@ -22,7 +22,9 @@
     "next": "^15.1.5",
     "postcss": "^8.4.38",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles-basic": "^2.12.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",

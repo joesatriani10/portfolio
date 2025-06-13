@@ -4,11 +4,13 @@ import Image from "next/image";
 import styles from "./profile.module.css";
 import DownloadResume from "@/app/components/download-resume/download-resume";
 import {Box} from "@mui/material";
+import FloatingParticles from "@/app/components/floating-particles/floating-particles";
 
 const Profile = () => {
     return (
         <>
             <section className={`${styles.profileContainer} fullscreen`}>
+                <FloatingParticles />
                 <div>
                     <Image
                         src="/images/angel.webp"
