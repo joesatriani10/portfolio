@@ -1,0 +1,19 @@
+.toggleButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.toggleButton:hover {
+    color: #930EFF;
+    text-shadow:
+            0 0 4px #b388ff,
+            0 0 8px #c084fc,
+            0 0 14px #930EFF;
+    transform: scale(1.2);
+}

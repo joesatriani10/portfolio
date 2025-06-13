@@ -10,6 +10,11 @@
     --primary-text-color: #484c4e; /* Dark Gray */
 }
 
+:root.dark {
+    --background-color: #0A0A1F; /* Dark Neon Blue */
+    --primary-text-color: #E0E0FF; /* Soft White */
+}
+
 .audiowideText {
     font-family: 'Audiowide', sans-serif;
     font-weight: 400;
@@ -38,6 +43,7 @@ body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {

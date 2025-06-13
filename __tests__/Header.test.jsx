@@ -18,4 +18,10 @@ describe('Header', () => {
         expect(links[2]).toHaveAttribute('href', expect.stringContaining('github.com'));
         expect(links[3]).toHaveAttribute('href', expect.stringContaining('youtube.com'));
     });
+
+    it('renders the theme toggle button', () => {
+        render(<Header />);
+        const button = screen.getByRole('button', { name: /toggle dark mode/i });
+        expect(button).toBeInTheDocument();
+    });
 });
