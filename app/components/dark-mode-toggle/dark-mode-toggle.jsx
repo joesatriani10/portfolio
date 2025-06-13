@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import styles from './dark-mode-toggle.module.css';
+import {Box} from "@mui/material";
 
 const DarkModeToggle = () => {
     const [isDark, setIsDark] = useState(false);
@@ -30,14 +31,17 @@ const DarkModeToggle = () => {
     };
 
     return (
-        <button
-            aria-label="Toggle dark mode"
-            className={styles.toggleButton}
-            onClick={toggleTheme}
-            type="button"
-        >
-            {isDark ? <LightModeIcon titleAccess="Switch to light mode" /> : <DarkModeIcon titleAccess="Switch to dark mode" />}
-        </button>
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <button
+                aria-label="Toggle dark mode"
+                className={styles.toggleButton}
+                onClick={toggleTheme}
+                type="button"
+            >
+                {isDark ? <LightModeIcon titleAccess="Switch to light mode" /> : <DarkModeIcon titleAccess="Switch to dark mode" />}
+            </button>
+        </Box>
+
     );
 };
 

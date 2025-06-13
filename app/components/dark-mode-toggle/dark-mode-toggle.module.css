@@ -1,11 +1,12 @@
 .toggleButton {
     background: transparent;
+    padding: 1rem;
     border: none;
     cursor: pointer;
     color: var(--primary-text-color);
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -15,5 +16,5 @@
             0 0 4px #b388ff,
             0 0 8px #c084fc,
             0 0 14px #930EFF;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }

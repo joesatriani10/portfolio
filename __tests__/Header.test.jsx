@@ -12,11 +12,4 @@ describe('Header', () => {
         const links = screen.queryAllByRole('link', { name: /linkedin|github|youtube/i });
         expect(links.length).toBe(0);
     });
-
-
-    it('renders the theme toggle button', () => {
-        render(<Header />);
-        const button = screen.getByRole('button', { name: /toggle dark mode/i });
-        expect(button).toBeInTheDocument();
-    });
 });

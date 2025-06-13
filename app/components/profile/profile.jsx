@@ -2,8 +2,6 @@
 import '../../global.css';
 import Image from "next/image";
 import styles from "./profile.module.css";
-import DownloadResume from "@/app/components/download-resume/download-resume";
-import {Box} from "@mui/material";
 import FloatingParticles from "@/app/components/floating-particles/floating-particles";
 
 const Profile = () => {
@@ -24,9 +22,6 @@ const Profile = () => {
                     <strong className={"audiowideText"}>I&apos;m a Full Stack Developer</strong> with a passion for building beautiful and functional websites and desktop applications.
                 </p>
             </section>
-            <Box>
-                <DownloadResume/>
-            </Box>
         </>
     );
 };
