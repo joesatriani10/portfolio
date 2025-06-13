@@ -11,6 +11,14 @@
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+.active {
+    color: #930EFF;
+    text-shadow:
+            0 0 4px #b388ff,
+            0 0 10px #c084fc,
+            0 0 14px #930EFF;
+}
+
 .link:hover {
     color: #930EFF;
     text-shadow:

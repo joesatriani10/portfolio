@@ -1,16 +1,21 @@
 'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './navigation.module.css';
 
 const Navigation = () => {
+    const pathname = usePathname();
+
+    const linkClass = (path) =>
+        `${styles.link} ${pathname === path ? styles.active : ''}`;
+
     return (
         // TODO: Check why renders different while toggle dark/light mode
-        // TODO:  Highlight link if its on page
         <nav className={`${styles.navbar} audiowideText`}>
-            <Link href="/" className={styles.link}>/<strong>Profile</strong>/</Link>
-            <Link href="/experience" className={styles.link}>/<strong>Experience</strong>/</Link>
-            <Link href="/projects" className={styles.link}>/<strong>Projects</strong>/</Link>
-            <Link href="/skills" className={styles.link}>/<strong>Skills</strong>/</Link>
+            <Link href="/" className={linkClass('/')}>/<strong>Profile</strong>/</Link>
+            <Link href="/experience" className={linkClass('/experience')}>/<strong>Experience</strong>/</Link>
+            <Link href="/projects" className={linkClass('/projects')}>/<strong>Projects</strong>/</Link>
+            <Link href="/skills" className={linkClass('/skills')}>/<strong>Skills</strong>/</Link>
         </nav>
     );
 };
