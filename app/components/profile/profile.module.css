@@ -57,7 +57,7 @@
     text-shadow: 0 0 6px #d3adff, 0 0 12px #00CFFF;
 }
 
-/* Barra decorativa lateral estilo HUD */
+/* HUD style decorative side bar */
 .profileText::before {
     content: '';
     position: absolute;
