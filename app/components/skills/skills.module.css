@@ -51,7 +51,7 @@
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: var(--card-background);
     padding: 0.75rem 1rem;
     border-radius: 10px;
     font-size: 0.95rem;
@@ -78,6 +78,10 @@
             0 0 10px #b388ff,
             0 0 20px #930EFF;
     text-shadow: 0 0 4px #c084fc;
+}
+
+:global(.dark) .card:hover {
+    background-color: rgba(57, 57, 80, 0.8);
 }
 
 /* Responsive */

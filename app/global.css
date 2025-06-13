@@ -8,11 +8,13 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     --background-color: #F0F0F0; /* Light Gray */
     --primary-text-color: #484c4e; /* Dark Gray */
+    --card-background: rgba(255, 255, 255, 0.65);
 }
 
 :root.dark {
     --background-color: #0A0A1F; /* Dark Neon Blue */
     --primary-text-color: #E0E0FF; /* Soft White */
+    --card-background: rgba(37, 37, 60, 0.7);
 }
 
 .audiowideText {
