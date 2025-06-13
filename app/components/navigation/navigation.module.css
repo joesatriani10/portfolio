@@ -4,6 +4,7 @@
     gap: 1.2rem;
     padding: 0;
     background-color: var(--background-color);
+    transition: background-color 0.3s ease;
 }
 
 .link {
@@ -27,3 +28,14 @@
             0 0 14px #930EFF;
 }
 
+/* Adjust navigation spacing and font size for smaller mobile screens */
+@media (max-width: 834px) and (orientation: portrait) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+    }
+}
