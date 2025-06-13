@@ -15,6 +15,9 @@ const Skills = () => {
                         <div className={styles.card}>JavaScript</div>
                         <div className={styles.card}>TypeScript</div>
                         <div className={styles.card}>Node.js</div>
+                        <div className={styles.card}>Python</div>
+                        <div className={styles.card}>WinForms</div>
+                        <div className={styles.card}>Entity Framework</div>
                     </div>
                 </div>
 
@@ -37,6 +40,7 @@ const Skills = () => {
                         <div className={styles.card}>RESTful APIs</div>
                         <div className={styles.card}>Entity Framework</div>
                         <div className={styles.card}>Java</div>
+                        <div className={styles.card}>Python</div>
                     </div>
                 </div>
 
@@ -78,6 +82,16 @@ const Skills = () => {
                         <div className={styles.card}>System Design</div>
                         <div className={styles.card}>Software Architecture</div>
                         <div className={styles.card}>Performance Optimization</div>
+                    </div>
+                </div>
+
+                <div className={styles.category}>
+                    <h4 className={`${styles.subtitle} audiowideText`}>Operating Systems</h4>
+                    <div className={styles.grid}>
+                        <div className={styles.card}>Windows 10 Pro / 11 Pro</div>
+                        <div className={styles.card}>Windows Server 2019</div>
+                        <div className={styles.card}>macOS</div>
+                        <div className={styles.card}>Linux (Debian-based)</div>
                     </div>
                 </div>
             </div>
