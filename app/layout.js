@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+        <head>
+            <link rel="icon" href="/favicon.png" type="image/png" />
+        </head>
         <body className={inter.className}>
         <CustomCursor />
         <Header />
