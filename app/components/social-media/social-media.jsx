@@ -31,15 +31,15 @@ const SocialMedia = () => {
                 <GitHubIcon sx={{ fontSize: iconSize, color: 'inherit' }} />
             </a>
 
-            <a
-                aria-label="Youtube"
-                className={styles.socialMediaLink}
-                href="https://www.youtube.com/@AngelMontesdeOca"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <YouTubeIcon sx={{ fontSize: iconSize, color: 'inherit' }} />
-            </a>
+            {/*<a*/}
+            {/*    aria-label="Youtube"*/}
+            {/*    className={styles.socialMediaLink}*/}
+            {/*    href="https://www.youtube.com/@AngelMontesdeOca"*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noreferrer"*/}
+            {/*>*/}
+            {/*    <YouTubeIcon sx={{ fontSize: iconSize, color: 'inherit' }} />*/}
+            {/*</a>*/}
         </>
     );
 };
