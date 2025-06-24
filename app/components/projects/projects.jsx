@@ -22,6 +22,13 @@ const projects = [
         code: null,
     },
     {
+        title: 'Tray X App',
+        technologies: ['C#', 'WPF', '.NET 8'],
+        image: '/images/trayx.webp',
+        demo: null,
+        code: 'https://github.com/joesatriani10/TrayX',
+    },
+    {
         title: 'Futuristic Login',
         technologies: ['Next.js', 'CSS'],
         image: '/images/login.webp',
