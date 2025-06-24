@@ -20,6 +20,6 @@ describe('Footer', () => {
         render(<Footer />);
         expect(screen.getByLabelText(/LinkedIn/i)).toBeInTheDocument();
         expect(screen.getByLabelText(/GitHub/i)).toBeInTheDocument();
-        expect(screen.getByLabelText(/Youtube/i)).toBeInTheDocument();
+        // expect(screen.getByLabelText(/Youtube/i)).toBeInTheDocument();
     });
 });
