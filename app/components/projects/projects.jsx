@@ -84,7 +84,7 @@ const projects = [
         technologies: ['Next.js', 'AWS', 'S3', 'RDS', 'MySQL'],
         image: '/images/food-app.webp',
         demo: 'https://food-next-js-seven.vercel.app/',
-        code: null,
+        code: 'https://github.com/joesatriani10/food-next-js',
     },
     {
         title: 'Image Recognition',
