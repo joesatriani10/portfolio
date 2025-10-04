@@ -8,6 +8,19 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const projects = [
     {
+        title: 'The Kidd Electric',
+        technologies: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Tailwind',
+            'FM',
+        ],
+        image: '/images/tke.webp',
+        demo: 'https://the-kidd-electric.vercel.app/',
+        code: null,
+    },
+    {
         title: 'Speed of Bytes',
         technologies: ['Next.js', 'React.js', 'MUI', 'EmailJS', 'tsParticles'],
         image: '/images/speed-of-bytes.webp',
@@ -19,7 +32,7 @@ const projects = [
         technologies: ['React.js', 'Vite', 'MongoDB', 'Express.js', 'Redux'],
         image: '/images/mern-fullstack.webp',
         demo: 'https://mern-fullstack-frontend-ten.vercel.app/',
-        code: null,
+        code: 'https://github.com/joesatriani10/mern-fullstack-admin',
     },
     {
         title: 'Tray X App',
