@@ -42,6 +42,13 @@ const projects = [
         code: 'https://github.com/joesatriani10/TrayX',
     },
     {
+        title: 'Network Scanner',
+        technologies: ['C#', '.NET 9', 'WinForms', 'Network/ICMP'],
+        image: '/images/net-scanner.webp',
+        demo: null,
+        code: 'https://github.com/joesatriani10/Network-Scanner',
+    },
+    {
         title: 'Futuristic Login',
         technologies: ['Next.js', 'CSS'],
         image: '/images/login.webp',
