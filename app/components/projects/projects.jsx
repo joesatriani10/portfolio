@@ -8,6 +8,19 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const projects = [
     {
+        title: 'FlipTrack Studio',
+        technologies: [
+            'Electron',
+            'React',
+            'Vite',
+            'SQLite',
+            'Material UI',
+        ],
+        image: '/images/fliptrack-studio.webp',
+        demo: 'https://apps.microsoft.com/detail/9pkwd640b1m7?hl=en-us&gl=US&ocid=pdpshare',
+        code: null,
+    },
+    {
         title: 'The Kidd Electric',
         technologies: [
             'Next.js',
