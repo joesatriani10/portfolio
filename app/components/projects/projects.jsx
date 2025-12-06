@@ -5,6 +5,7 @@ import Image from 'next/image';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
 import DownloadIcon from '@mui/icons-material/Download';
+import { useEffect, useState } from 'react';
 
 const projects = [
     {
@@ -116,13 +117,52 @@ const projects = [
 ];
 
 const Projects = () => {
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const openModal = (project) => {
+        setSelectedProject(project);
+    };
+
+    const closeModal = () => {
+        setSelectedProject(null);
+    };
+
+    useEffect(() => {
+        if (!selectedProject) {
+            return undefined;
+        }
+
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [selectedProject]);
+
     return (
         <section className={styles.projectsSection}>
             <div className={styles.projectsContainer}>
                 <h3 className={`${styles.projectsHeader} audiowideText`}>Projects</h3>
                 <div className={styles.grid}>
                     {projects.map((project, index) => (
-                        <div key={index} className={styles.card}>
+                        <div
+                            key={index}
+                            className={styles.card}
+                            onClick={() => openModal(project)}
+                            role="button"
+                            tabIndex={0}
+                            onKeyDown={(event) => {
+                                if (event.key === 'Enter' || event.key === ' ') {
+                                    event.preventDefault();
+                                    openModal(project);
+                                }
+                            }}
+                        >
                             <h2 className={"audiowideText"}>{project.title}</h2>
                             <h5>[{project.technologies.join(', ')}]</h5>
                             <Image
@@ -143,6 +183,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         aria-label={`${project.title} download`}
                                         className={styles.iconLink}
+                                        onClick={(event) => event.stopPropagation()}
                                     >
                                         <DownloadIcon />
                                     </a>
@@ -154,6 +195,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         aria-label={`${project.title} demo`}
                                         className={styles.iconLink}
+                                        onClick={(event) => event.stopPropagation()}
                                     >
                                         <WebOutlinedIcon />
                                     </a>
@@ -165,6 +207,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         aria-label={`${project.title} GitHub`}
                                         className={styles.iconLink}
+                                        onClick={(event) => event.stopPropagation()}
                                     >
                                         <GitHubIcon />
                                     </a>
@@ -174,6 +217,34 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
+            {selectedProject && (
+                <div className={styles.modalOverlay} onClick={closeModal}>
+                    <div
+                        className={styles.modalContent}
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        <button
+                            type="button"
+                            className={styles.modalCloseButton}
+                            onClick={closeModal}
+                            aria-label="Close image preview"
+                        >
+                            &times;
+                        </button>
+                        <Image
+                            src={selectedProject.image}
+                            alt={`Large preview of ${selectedProject.title}`}
+                            width={1200}
+                            height={776}
+                            quality={90}
+                            className={styles.modalImage}
+                            style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                            priority
+                        />
+                        <p className={styles.modalCaption}>{selectedProject.title}</p>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
