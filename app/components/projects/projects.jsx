@@ -131,7 +131,7 @@ const Projects = () => {
                                 alt={`Preview of ${project.title}`}
                                 width={400}
                                 height={258}
-                                quality={70}
+                                quality={75}
                                 style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                                 priority
                             />

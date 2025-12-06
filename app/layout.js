@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import Divider from "@/app/components/divider/divider";
 import Footer from "@/app/components/footer/footer";
 import Header from "@/app/components/header/header";
-import CustomCursor from "@/app/components/custom-cursor/custom-cursor";
 import DarkModeToggle from "@/app/components/dark-mode-toggle/dark-mode-toggle";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
             <link rel="icon" href="/favicon.png" type="image/png" />
         </head>
         <body className={inter.className}>
-        <CustomCursor />
         <Header />
         <Divider />
         <DarkModeToggle />
