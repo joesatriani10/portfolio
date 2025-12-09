@@ -31,7 +31,7 @@ const projects = [
             'FM',
         ],
         image: '/images/tke.webp',
-        demo: 'https://the-kidd-electric.vercel.app/',
+        demo: 'https://kidd.angelmontesdev.com/',
         code: null,
     },
     {
@@ -45,7 +45,7 @@ const projects = [
         title: 'MERN Full Stack',
         technologies: ['React.js', 'Vite', 'MongoDB', 'Express.js', 'Redux'],
         image: '/images/mern-fullstack.webp',
-        demo: 'https://mern-fullstack-frontend-ten.vercel.app/',
+        demo: 'https://mern.angelmontesdev.com/',
         code: 'https://github.com/joesatriani10/mern-fullstack-admin',
     },
     {
@@ -66,7 +66,7 @@ const projects = [
         title: 'Futuristic Login',
         technologies: ['Next.js', 'CSS'],
         image: '/images/login.webp',
-        demo: 'https://login-form-next-ruby.vercel.app/',
+        demo: 'https://login.angelmontesdev.com/',
         code: 'https://github.com/joesatriani10/login-form-next',
     },
     {
@@ -104,7 +104,7 @@ const projects = [
         title: 'Food App',
         technologies: ['Next.js', 'AWS', 'S3', 'RDS', 'MySQL'],
         image: '/images/food-app.webp',
-        demo: 'https://food-next-js-seven.vercel.app/',
+        demo: 'https://food.angelmontesdev.com/',
         code: 'https://github.com/joesatriani10/food-next-js',
     },
     {
