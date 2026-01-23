@@ -1,33 +1,33 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import styles from './dark-mode-toggle.module.css';
-import {Box} from "@mui/material";
+import { Box } from '@mui/material';
 
 const DarkModeToggle = () => {
-    const [isDark, setIsDark] = useState(false);
+    // Read initial theme once on the client without triggering setState in an effect
+    const [isDark, setIsDark] = useState(() => {
+        if (typeof window === 'undefined') return false;
+        return localStorage.getItem('theme') === 'dark';
+    });
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const stored = localStorage.getItem('theme');
-            if (stored === 'dark') {
-                document.documentElement.classList.add('dark');
-                setIsDark(true);
-            }
-        }
-    }, []);
+        // Keep DOM and localStorage in sync with the current state
+        const root = document.documentElement;
 
-    const toggleTheme = () => {
-        const newTheme = !isDark;
-        setIsDark(newTheme);
-        if (newTheme) {
-            document.documentElement.classList.add('dark');
+        if (isDark) {
+            root.classList.add('dark');
             localStorage.setItem('theme', 'dark');
         } else {
-            document.documentElement.classList.remove('dark');
+            root.classList.remove('dark');
             localStorage.setItem('theme', 'light');
         }
+    }, [isDark]);
+
+    const toggleTheme = () => {
+        setIsDark((prev) => !prev);
     };
 
     return (
@@ -38,10 +38,13 @@ const DarkModeToggle = () => {
                 onClick={toggleTheme}
                 type="button"
             >
-                {isDark ? <LightModeIcon titleAccess="Switch to light mode" /> : <DarkModeIcon titleAccess="Switch to dark mode" />}
+                {isDark ? (
+                    <LightModeIcon titleAccess="Switch to light mode" />
+                ) : (
+                    <DarkModeIcon titleAccess="Switch to dark mode" />
+                )}
             </button>
         </Box>
-
     );
 };
 
