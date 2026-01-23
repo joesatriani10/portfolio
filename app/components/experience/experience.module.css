@@ -1,14 +1,9 @@
 .experienceContainer {
-    padding: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    gap: 1.75rem;
+    animation: fadeInExperience 0.6s ease-out forwards;
     opacity: 0;
-    animation: fadeInExperience 0.5s ease-out forwards;
-    animation-delay: 0.2s;
 }
 
 @keyframes fadeInExperience {
@@ -17,59 +12,37 @@
     }
 }
 
-.experienceHeader {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--primary-text-color);
-    transition: color 0.3s ease;
-}
-
-.experienceHeader:hover {
-    color: #930EFF;
+.experienceIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
     .experienceContainer {
-        padding: 3rem;
-    }
-
-    .experienceHeader {
-        font-size: 1.125rem;
+        gap: 1.5rem;
     }
 }
 
 /* For mobile devices */
 @media (max-width: 768px) {
-    .experienceContainer {
-        padding: 2rem;
-    }
-
-    .experienceHeader {
-        font-size: 1rem;
+    .experienceIntro {
+        text-align: center;
     }
 }
 
 /* For 1080p screens */
 @media (min-width: 1920px) {
     .experienceContainer {
-        padding: 7rem;
-    }
-
-    .experienceHeader {
-        font-size: 1.5rem;
+        gap: 2rem;
     }
 }
 
 /* For ultra-wide screens */
 @media (min-width: 2560px) {
     .experienceContainer {
-        padding: 9rem;
-    }
-
-    .experienceHeader {
-        font-size: 1.875rem;
+        gap: 2.5rem;
     }
 }

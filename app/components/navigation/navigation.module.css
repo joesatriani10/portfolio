@@ -1,37 +1,33 @@
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1.1rem;
     padding: 0;
-    background-color: var(--background-color);
-    transition: background-color 0.3s ease;
+    background-color: transparent;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
 }
 
 .link {
     color: var(--primary-text-color);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
 }
 
 .active {
-    color: #930EFF;
-    text-shadow:
-            0 0 4px #b388ff,
-            0 0 10px #c084fc,
-            0 0 14px #930EFF;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .link:hover {
-    color: #930EFF;
-    text-shadow:
-            0 0 4px #b388ff,
-            0 0 10px #c084fc,
-            0 0 14px #930EFF;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* Adjust navigation spacing and font size for smaller mobile screens */
 @media (max-width: 834px) and (orientation: portrait) {
     .navbar {
-        flex-wrap: wrap;
         gap: 0.75rem;
     }
 

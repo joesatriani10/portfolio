@@ -2,7 +2,7 @@
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';
 import styles from "./download-resume.module.css";
 
-const DownloadResume = () => {
+const DownloadResume = ({ className = "" }) => {
     const handleDownload = async (event) => {
         event.preventDefault();
         const response = await fetch('/resume.pdf');
@@ -16,12 +16,15 @@ const DownloadResume = () => {
     };
 
     return (
-        <div className={styles.downloadContainer}>
-            <div className={`${styles.downloadButton} audiowideText`} onClick={handleDownload}>
-                <span>Download my resume</span>
-                <PictureAsPdfOutlinedIcon sx={{ fontSize: 28, color: 'inherit' }} />
-            </div>
-        </div>
+        <button
+            className={`${styles.downloadButton} button ${className}`}
+            onClick={handleDownload}
+            type="button"
+            aria-label="Download resume"
+        >
+            <span>Resume</span>
+            <PictureAsPdfOutlinedIcon sx={{ fontSize: 20, color: 'inherit' }} />
+        </button>
     );
 };
 

@@ -10,11 +10,11 @@ const Navigation = () => {
         `${styles.link} ${pathname === path ? styles.active : ''}`;
 
     return (
-        <nav className={`${styles.navbar} audiowideText`}>
-            <Link href="/" className={linkClass('/')}>/<strong>Profile</strong>/</Link>
-            <Link href="/experience" className={linkClass('/experience')}>/<strong>Experience</strong>/</Link>
-            <Link href="/projects" className={linkClass('/projects')}>/<strong>Projects</strong>/</Link>
-            <Link href="/skills" className={linkClass('/skills')}>/<strong>Skills</strong>/</Link>
+        <nav className={styles.navbar}>
+            <Link href="/" className={linkClass('/')}>Profile</Link>
+            <Link href="/experience" className={linkClass('/experience')}>Experience</Link>
+            <Link href="/projects" className={linkClass('/projects')}>Projects</Link>
+            <Link href="/skills" className={linkClass('/skills')}>Skills</Link>
         </nav>
     );
 };

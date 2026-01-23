@@ -6,92 +6,66 @@ const Skills = () => {
     return (
         <section className={styles.skillsSection}>
             <div className={styles.skillsContainer}>
-                <h3 className={`${styles.skillsHeader} audiowideText`}>Skills & Technologies</h3>
+                <div className={styles.skillsIntro}>
+                    <h3 className="sectionTitle">Skills</h3>
+                    <p className="sectionSubtitle">
+                        Core stack and practices used to ship reliable software.
+                    </p>
+                </div>
 
                 <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Programming</h4>
+                    <h4 className={styles.subtitle}>Frontend</h4>
                     <div className={styles.grid}>
-                        <div className={styles.card}>C#</div>
-                        <div className={styles.card}>JavaScript</div>
+                        <div className={styles.card}>React</div>
+                        <div className={styles.card}>JavaScript (ES6+)</div>
                         <div className={styles.card}>TypeScript</div>
-                        <div className={styles.card}>Node.js</div>
-                        <div className={styles.card}>Python</div>
-                        <div className={styles.card}>WinForms</div>
-                        <div className={styles.card}>Entity Framework</div>
+                        <div className={styles.card}>HTML/CSS</div>
+                        <div className={styles.card}>CSS-in-JS</div>
                     </div>
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Frontend</h4>
+                    <h4 className={styles.subtitle}>Backend</h4>
                     <div className={styles.grid}>
-                        <div className={styles.card}>ReactJS</div>
-                        <div className={styles.card}>Next.js</div>
-                        <div className={styles.card}>HTML5</div>
-                        <div className={styles.card}>CSS</div>
-                        <div className={styles.card}>UI/UX Design Principles</div>
-                    </div>
-                </div>
-
-                <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Backend</h4>
-                    <div className={styles.grid}>
-                        <div className={styles.card}>.NET 6</div>
-                        <div className={styles.card}>.NET Framework 4.8</div>
-                        <div className={styles.card}>RESTful APIs</div>
-                        <div className={styles.card}>Entity Framework</div>
                         <div className={styles.card}>Java</div>
-                        <div className={styles.card}>Python</div>
-                    </div>
-                </div>
-
-                <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Databases</h4>
-                    <div className={styles.grid}>
-                        <div className={styles.card}>MSSQL</div>
-                        <div className={styles.card}>MySQL</div>
-                        <div className={styles.card}>AWS RDS</div>
-                        <div className={styles.card}>PostgreSQL</div>
-                        <div className={styles.card}>mongoDB</div>
-                    </div>
-                </div>
-
-                <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Security & DevOps</h4>
-                    <div className={styles.grid}>
+                        <div className={styles.card}>C#/.NET</div>
+                        <div className={styles.card}>REST APIs</div>
                         <div className={styles.card}>JWT</div>
-                        <div className={styles.card}>Data Encryption</div>
-                        <div className={styles.card}>Swagger</div>
-                        <div className={styles.card}>CI/CD</div>
-                        <div className={styles.card}>Server Management</div>
+                        <div className={styles.card}>Swagger/OpenAPI</div>
                     </div>
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Cloud & Infrastructure</h4>
+                    <h4 className={styles.subtitle}>Data</h4>
                     <div className={styles.grid}>
-                        <div className={styles.card}>AWS S3</div>
-                        <div className={styles.card}>GitLab (Pipelines, Runners, Servers)</div>
-                        <div className={styles.card}>EP</div>
-                        <div className={styles.card}>Firewalls</div>
+                        <div className={styles.card}>SQL</div>
+                        <div className={styles.card}>PostgreSQL</div>
+                        <div className={styles.card}>MS SQL Server</div>
+                        <div className={styles.card}>MySQL</div>
+                        <div className={styles.card}>Data Modeling</div>
                     </div>
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Software Design</h4>
+                    <h4 className={styles.subtitle}>DevOps</h4>
                     <div className={styles.grid}>
-                        <div className={styles.card}>System Design</div>
-                        <div className={styles.card}>Software Architecture</div>
-                        <div className={styles.card}>Performance Optimization</div>
+                        <div className={styles.card}>GitLab CI/CD</div>
+                        <div className={styles.card}>Docker</div>
+                        <div className={styles.card}>Linux</div>
+                        <div className={styles.card}>Windows</div>
+                        <div className={styles.card}>AWS</div>
                     </div>
                 </div>
 
                 <div className={styles.category}>
-                    <h4 className={`${styles.subtitle} audiowideText`}>Operating Systems</h4>
+                    <h4 className={styles.subtitle}>Practices</h4>
                     <div className={styles.grid}>
-                        <div className={styles.card}>Windows 10 Pro / 11 Pro</div>
-                        <div className={styles.card}>Windows Server 2019</div>
-                        <div className={styles.card}>macOS</div>
-                        <div className={styles.card}>Linux (Debian-based)</div>
+                        <div className={styles.card}>Agile</div>
+                        <div className={styles.card}>SDLC</div>
+                        <div className={styles.card}>Code Reviews</div>
+                        <div className={styles.card}>Mentoring</div>
+                        <div className={styles.card}>QA Collaboration</div>
+                        <div className={styles.card}>Automated Testing</div>
                     </div>
                 </div>
             </div>

@@ -3,19 +3,17 @@
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    padding: 0.05rem;
-    margin-right: 1rem;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
     color: var(--primary-text-color);
-    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    border-radius: 999px;
 }
 
 .socialMediaLink:hover {
-    color: #930EFF;
-    text-shadow:
-            0 0 4px #b388ff,
-            0 0 8px #c084fc,
-            0 0 14px #930EFF;
-    transform: scale(1.2);
+    color: var(--accent-color);
+    background: var(--accent-soft);
+    transform: translateY(-1px);
 }
 
 /* Responsive tweaks */

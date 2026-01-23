@@ -1,12 +1,10 @@
 import './global.css';
-import { Inter } from "next/font/google";
-import Divider from "@/app/components/divider/divider";
+import { Fraunces, Sora } from "next/font/google";
 import Footer from "@/app/components/footer/footer";
 import Header from "@/app/components/header/header";
-import CustomCursor from "@/app/components/custom-cursor/custom-cursor";
-import DarkModeToggle from "@/app/components/dark-mode-toggle/dark-mode-toggle";
 
-const inter = Inter({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 
 export default function RootLayout({ children }) {
     return (
@@ -14,14 +12,12 @@ export default function RootLayout({ children }) {
         <head>
             <link rel="icon" href="/favicon.png" type="image/png" />
         </head>
-        <body className={inter.className}>
-        <CustomCursor />
-        <Header />
-        <Divider />
-        <DarkModeToggle />
-        {children}
-        <Divider />
-        <div className="p-8 max-w-4xl mx-auto bg-[#D3D3D3] text-black">
+        <body className={`${sora.variable} ${fraunces.variable}`}>
+        <div className="siteShell">
+            <Header />
+            <main className="pageContainer">
+                {children}
+            </main>
             <Footer />
         </div>
         </body>

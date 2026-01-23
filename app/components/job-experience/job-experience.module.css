@@ -1,48 +1,61 @@
 .jobExperience {
-    background-color: var(--card-background);
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
+    background-color: var(--surface-color);
+    padding: 1.75rem;
+    border-radius: var(--radius-sm);
     color: var(--primary-text-color);
-    opacity: 0.9;
-    backdrop-filter: blur(6px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 18px 40px rgba(17, 20, 24, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .jobExperience:hover {
-    transform: scale(1.015);
-    box-shadow: 0 0 10px #b388ff, 0 0 20px #930EFF;
-    text-shadow: 0 0 4px #c084fc;
+    transform: translateY(-2px);
+    box-shadow: 0 22px 50px rgba(17, 20, 24, 0.12);
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
 
-.jobExperience h4 {
-    font-size: 1.125rem;
+.title {
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--primary-text-color);
-    line-height: 1.4;
-    text-shadow: none;
+    line-height: 1.3;
+}
+
+.meta {
+    color: var(--muted-text-color);
+    font-size: 0.9rem;
 }
 
 .responsibilityItem {
-    font-size: 0.95rem;
-    color: var(--primary-text-color);
-    text-shadow: none;
-    text-indent: -1em;
-    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    position: relative;
     line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.responsibilityItem::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--accent-color);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .jobExperience {
-        padding: 1rem;
-    }
-
-    .jobExperience h4 {
-        font-size: 1rem;
+        padding: 1.25rem;
     }
 
     .responsibilityItem {

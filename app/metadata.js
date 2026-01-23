@@ -5,10 +5,12 @@ export const metadata = {
         template: '%s | Angel Portfolio',
     },
     description:
-        'Angel Montes de Oca is a full-stack developer with over seven years of experience building modern web applications.',
+        'Angel Montes de Oca is a senior full-stack engineer and tech lead with 8+ years building enterprise software, including HIPAA-aligned systems.',
     keywords: [
         'Angel Montes de Oca',
-        'Full Stack Developer',
+        'Senior Full-Stack Engineer',
+        'Tech Lead',
+        'Full Stack Engineer',
         'Web Developer Portfolio',
         'Next.js',
         'React',
@@ -18,9 +20,9 @@ export const metadata = {
     ],
     creator: 'Angel Montes de Oca',
     openGraph: {
-        title: 'Angel Montes de Oca - Full Stack Developer',
+        title: 'Angel Montes de Oca - Senior Full-Stack Engineer',
         description:
-            'Portfolio showcasing projects and experience in modern web technologies.',
+            'Senior full-stack engineer and tech lead with 8+ years building enterprise software, including HIPAA-aligned systems.',
         siteName: 'Angel Portfolio',
         url: 'https://www.angelmontesdev.com',
         images: [
@@ -36,9 +38,9 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Angel Montes de Oca - Full Stack Developer',
+        title: 'Angel Montes de Oca - Senior Full-Stack Engineer',
         description:
-            'Portfolio showcasing projects and experience in modern web technologies.',
+            'Senior full-stack engineer and tech lead with 8+ years building enterprise software, including HIPAA-aligned systems.',
         images: ['/images/screenshot.png'],
     },
     robots: {

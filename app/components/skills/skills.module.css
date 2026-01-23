@@ -3,13 +3,11 @@
 }
 
 .skillsContainer {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeInSkills 0.6s ease-out forwards;
     opacity: 0;
-    animation: fadeInSkills 0.5s ease-out forwards;
-    animation-delay: 0.2s;
 }
 
 @keyframes fadeInSkills {
@@ -18,17 +16,10 @@
     }
 }
 
-.skillsHeader {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--primary-text-color);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.skillsHeader:hover {
-    color: #930EFF;
-    text-shadow: 0 0 4px #c084fc, 0 0 8px #930EFF;
+.skillsIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .category {
@@ -41,62 +32,44 @@
     margin-bottom: 1rem;
     color: var(--primary-text-color);
     text-align: left;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .card {
-    background-color: var(--card-background);
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
+    background-color: var(--surface-color);
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
     font-size: 0.95rem;
     color: var(--primary-text-color);
-    opacity: 0.85;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition:
-            transform 0.3s ease,
-            color 0.3s ease,
-            box-shadow 0.3s ease,
-            text-shadow 0.3s ease;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.02);
-    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    border: 1px solid var(--border-color);
     cursor: default;
 }
 
 .card:hover {
-    color: #930EFF;
-    background-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
-    box-shadow:
-            0 0 10px #b388ff,
-            0 0 20px #930EFF;
-    text-shadow: 0 0 4px #c084fc;
-}
-
-:global(.dark) .card:hover {
-    background-color: rgba(57, 57, 80, 0.8);
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .skillsContainer {
-        padding: 2rem 1.5rem;
-    }
-
-    .skillsHeader {
-        font-size: 1.5rem;
-    }
-
     .subtitle {
         font-size: 1.1rem;
         text-align: center;
+        justify-content: center;
     }
 
     .grid {

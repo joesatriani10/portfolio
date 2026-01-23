@@ -1,46 +1,60 @@
 .header {
-    padding: 1rem;
+    padding: 1.75rem 2rem 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
     flex-wrap: wrap;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(246, 244, 240, 0.6);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.textContainer {
+.brand {
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.35rem;
 }
 
-.cyberpunkTitle {
-    font-size: 2rem;
+.name {
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.2rem);
+    font-weight: 600;
+}
+
+.brandLink {
     color: var(--primary-text-color);
-    transition: color 0.2s ease, text-shadow 0.2s ease;
-    position: relative;
+    transition: color 0.2s ease;
 }
 
-
-.cyberpunkTitle:hover {
-    color: #930EFF;
-    text-shadow:
-            0 0 4px #b388ff,
-            0 0 8px #c084fc,
-            0 0 14px #930EFF;
+.brandLink:hover {
+    color: var(--accent-color);
 }
 
+.role {
+    font-size: 0.85rem;
+    color: var(--muted-text-color);
+}
 
-
-.rightContainer {
+.navArea {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contactButton {
+    font-size: 0.9rem;
+    padding: 0.55rem 1.1rem;
 }
 
 /* Tablets */
 @media (max-width: 1024px) {
-    .cyberpunkTitle {
-        font-size: 1.75rem;
+    .header {
+        padding: 1.5rem;
     }
 }
 
@@ -52,11 +66,7 @@
         text-align: center;
     }
 
-    .cyberpunkTitle {
-        font-size: 1.5rem;
-    }
-
-    .rightContainer {
+    .navArea {
         width: 100%;
         padding-top: 1rem;
         justify-content: center;
@@ -65,22 +75,14 @@
 
 /* 1080p screens */
 @media (min-width: 1920px) {
-    .cyberpunkTitle {
-        font-size: 2.5rem;
-    }
-
-    .rightContainer {
-        gap: 1.5rem;
+    .header {
+        padding: 2rem 3rem 1.5rem;
     }
 }
 
 /* Ultra-wide screens */
 @media (min-width: 2560px) {
-    .cyberpunkTitle {
-        font-size: 3rem;
-    }
-
-    .rightContainer {
-        gap: 2rem;
+    .header {
+        padding: 2.5rem 4rem 2rem;
     }
 }
