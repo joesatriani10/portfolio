@@ -1,6 +1,6 @@
 # 🧠 Angel Montes de Oca - Personal Portfolio
 
-This is my personal portfolio built with [Next.js](https://nextjs.org/) and custom-tailored with a **cyberpunk-inspired UI**, responsive layout, and glowing animations. It showcases my skills, work experience, and featured projects as a Full Stack Developer.
+This is my personal portfolio built with [Next.js](https://nextjs.org/), CSS Modules, and a responsive layout. It showcases my skills, work experience, and featured projects as a Full Stack Developer.
 
 > 🎯 Designed with performance, accessibility, and modern frontend practices in mind.
 
@@ -8,30 +8,26 @@ This is my personal portfolio built with [Next.js](https://nextjs.org/) and cust
 
 ## 🚀 Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
+- **Framework:** Next.js 16 (App Router)
 - **Styling:** CSS Modules + custom responsive design
-- **UI Components:** MUI (Material UI), Framer Motion
-- **Testing:** Jest + React Testing Library ✅
+- **UI:** Native HTML/CSS
 
 ---
 
 ## 📂 Features
 
-- ⚡ Neon-animated UI based on *Horizon Zero Dawn* tones
 - 📱 Fully responsive and mobile-friendly
 - 📁 Dynamic sections: Skills, Experience, Projects
-- 📄 Downloadable resume component
-- ✅ Unit tests with Jest & RTL (see `/__tests__`)
+- 📄 Downloadable resume link
 
 ---
 
-## 🧪 Linting & Testing
+## 🧪 Linting
 
-Run the linter and all unit tests with:
+Run the linter with:
 
 ```bash
 npm run lint
-npm test
 ```
 
 
@@ -64,7 +60,7 @@ Then open [http://localhost:3000](http://localhost:3000)
 
 Connect with me on:
 
-- [LinkedIn](https://www.linkedin.com/in/angel-israel-real-montes-de-oca/)
+- [LinkedIn](https://www.linkedin.com/in/angelmontesdev/)
 - [GitHub](https://github.com/joesatriani10)
 - [YouTube](https://www.youtube.com/@AngelMontesdeOca)
 
