@@ -1,5 +1,6 @@
 import './global.css';
 import { Inter } from 'next/font/google';
+import BackToTop from '@/app/components/layout/back-to-top';
 import Navbar from '@/app/components/layout/navbar';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
@@ -116,6 +117,7 @@ export default function RootLayout({ children }) {
         />
         <Navbar />
         {children}
+        <BackToTop />
         </body>
         </html>
     );
