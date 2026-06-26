@@ -355,6 +355,11 @@ button {
     transition: all 0.2s ease;
 }
 
+.socialRow svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
 .socialRow a:hover {
     background: var(--slate-700);
     color: white;
