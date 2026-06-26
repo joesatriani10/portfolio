@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { personalInfo } from '@/app/lib/data';
 
@@ -16,7 +17,14 @@ export default function Navbar() {
     return (
         <nav className="navbar" aria-label="Primary navigation">
             <a className="brandMark" href="#top" onClick={() => setIsOpen(false)}>
-                <span className="brandInitials" aria-hidden="true">AM</span>
+                <Image
+                    src="/favicon.png"
+                    alt=""
+                    width={38}
+                    height={38}
+                    className="brandLogo"
+                    aria-hidden="true"
+                />
                 <span className="srOnly">{personalInfo.name} - Home</span>
             </a>
             <div className="navLinks">
