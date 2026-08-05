@@ -759,8 +759,95 @@ button {
 }
 
 .bombScene {
+    display: grid;
+    place-items: center;
     width: 100%;
     height: 24rem;
+}
+
+.bombImageWrap {
+    position: relative;
+    width: min(92%, 28rem);
+    animation: bombFloat 2.8s ease-in-out infinite;
+}
+
+.bombImageFallback {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter:
+        drop-shadow(-0.6rem 0 1.5rem rgba(217, 70, 239, 0.24))
+        drop-shadow(0.6rem 0 1.5rem rgba(14, 165, 233, 0.24));
+}
+
+.bombVideo {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bombCountdownOnImage {
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    display: grid;
+    width: 43%;
+    height: 13%;
+    place-items: center;
+    transform: translate(-50%, -50%);
+    color: #0f172a;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bombCountdownOnImage strong {
+    line-height: 0.8;
+    font-size: clamp(2.25rem, 8vw, 4.7rem);
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
+}
+
+.bombCountdownOnImage span {
+    color: rgba(14, 165, 233, 0.82);
+    font-size: clamp(0.42rem, 1.3vw, 0.78rem);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.bombSpark {
+    position: absolute;
+    top: 15%;
+    left: 73%;
+    width: clamp(0.5rem, 2.2vw, 0.85rem);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #fbbf24;
+    box-shadow:
+        0 0 0.25rem white,
+        0 0 0.75rem #f97316,
+        0 0 1.5rem rgba(249, 115, 22, 0.9);
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    animation: sparkFlicker var(--spark-speed, 0.7s) ease-in-out infinite;
+    pointer-events: none;
+}
+
+.bombSpark::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    width: 65%;
+    height: 180%;
+    background: #fb923c;
+    clip-path: polygon(50% 0, 100% 65%, 50% 100%, 0 65%);
+    transform: translateX(-50%) rotate(45deg);
+    transform-origin: center bottom;
 }
 
 .bombFallback {
@@ -872,6 +959,16 @@ button {
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes bombFloat {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-0.35rem) scale(1.012); }
+}
+
+@keyframes sparkFlicker {
+    0%, 100% { opacity: 0.7; transform: translate(-50%, -50%) scale(0.8) rotate(0deg); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15) rotate(45deg); }
+}
+
 @keyframes detonationFlash {
     0% { background: rgba(255, 255, 255, 0); }
     45% { background: rgba(255, 255, 255, 0.88); }
@@ -886,6 +983,11 @@ button {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+
+    .bombVideo,
+    .bombSpark {
+        display: none;
     }
 }
 

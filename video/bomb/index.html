@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=800, height=800" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 800px;
+        height: 800px;
+        overflow: hidden;
+        background: #020617;
+      }
+
+      body {
+        font-family: Inter, sans-serif;
+      }
+
+      #root {
+        position: relative;
+        width: 800px;
+        height: 800px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 46%, rgba(30, 41, 59, 0.72), transparent 48%),
+          radial-gradient(circle at 18% 52%, rgba(217, 70, 239, 0.16), transparent 36%),
+          radial-gradient(circle at 84% 46%, rgba(14, 165, 233, 0.16), transparent 36%),
+          #020617;
+      }
+
+      .ambient,
+      .halo,
+      .bomb,
+      .screenWindow,
+      .screenGlow,
+      .scanline,
+      .spark,
+      .shockwave,
+      .flash {
+        position: absolute;
+      }
+
+      .ambient {
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent 0,
+          transparent 7px,
+          rgba(255, 255, 255, 0.018) 8px,
+          transparent 9px
+        );
+        opacity: 0.4;
+      }
+
+      .halo {
+        top: 18%;
+        left: 50%;
+        width: 70%;
+        aspect-ratio: 1;
+        border: 1px solid rgba(56, 189, 248, 0.18);
+        border-radius: 50%;
+        box-shadow:
+          0 0 3rem rgba(217, 70, 239, 0.16),
+          inset 0 0 3rem rgba(14, 165, 233, 0.12);
+        transform: translateX(-50%);
+      }
+
+      .bomb {
+        top: 4%;
+        left: 4%;
+        width: 92%;
+        height: auto;
+        filter:
+          drop-shadow(-0.8rem 0 1.8rem rgba(217, 70, 239, 0.32))
+          drop-shadow(0.8rem 0 1.8rem rgba(14, 165, 233, 0.32));
+        transform-origin: 50% 55%;
+      }
+
+      .screenWindow {
+        top: 43%;
+        left: 25%;
+        width: 50%;
+        height: 25%;
+        overflow: hidden;
+        border-radius: 5%;
+      }
+
+      .screenGlow {
+        top: 0;
+        left: -120%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.38) 48%, transparent 76%);
+        opacity: 0;
+      }
+
+      .scanline {
+        top: 47%;
+        left: 28%;
+        width: 44%;
+        height: 1px;
+        background: #38bdf8;
+        box-shadow: 0 0 0.75rem #38bdf8;
+        opacity: 0;
+      }
+
+      .spark {
+        top: 16%;
+        left: 74%;
+        width: 0.9rem;
+        height: 0.9rem;
+        border-radius: 50%;
+        background: #fbbf24;
+        box-shadow:
+          0 0 0.4rem white,
+          0 0 1rem #f97316,
+          0 0 2rem rgba(249, 115, 22, 0.95);
+        opacity: 0;
+      }
+
+      .spark::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0.6rem;
+        height: 2.4rem;
+        background: #fb923c;
+        clip-path: polygon(50% 0, 100% 66%, 50% 100%, 0 66%);
+        transform: translate(-50%, -75%) rotate(45deg);
+      }
+
+      .shockwave {
+        top: 43%;
+        left: 50%;
+        width: 4rem;
+        aspect-ratio: 1;
+        border: 2px solid rgba(248, 113, 113, 0.85);
+        border-radius: 50%;
+        opacity: 0;
+      }
+
+      .flash {
+        inset: 0;
+        background: white;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="bomb"
+      data-start="0"
+      data-duration="5.4"
+      data-width="800"
+      data-height="800"
+    >
+      <div class="ambient" aria-hidden="true"></div>
+      <div class="halo" aria-hidden="true"></div>
+      <img class="bomb" src="./bomb.png" alt="" aria-hidden="true" />
+      <div class="screenWindow" aria-hidden="true">
+        <div class="screenGlow" data-layout-allow-overflow></div>
+      </div>
+      <div class="scanline" aria-hidden="true"></div>
+      <div class="spark" aria-hidden="true"></div>
+      <div class="shockwave" aria-hidden="true"></div>
+      <div class="flash" aria-hidden="true"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo(
+        '.bomb',
+        { opacity: 0, scale: 0.94, y: 18, rotation: -1.5 },
+        { opacity: 1, scale: 1, y: 0, rotation: 0, duration: 0.7, ease: 'power2.out' },
+        0
+      );
+      tl.to('.halo', { scale: 1.08, opacity: 0.65, duration: 1.4, ease: 'sine.inOut', yoyo: true, repeat: 2 }, 0.3);
+      tl.to('.bomb', { y: -10, rotation: 1.2, duration: 1.5, ease: 'sine.inOut', yoyo: true, repeat: 2 }, 0.7);
+      tl.to('.spark', { opacity: 1, scale: 1.25, duration: 0.13, ease: 'power1.inOut', yoyo: true, repeat: 19 }, 0.2);
+      tl.fromTo('.screenGlow', { xPercent: 0, opacity: 0 }, { xPercent: 240, opacity: 0.72, duration: 0.9, ease: 'power2.inOut', repeat: 3, repeatDelay: 0.45 }, 0.4);
+      tl.to('.scanline', { opacity: 0.9, y: 128, duration: 1.25, ease: 'none', repeat: 3, repeatDelay: 0.25 }, 0.45);
+      tl.to('.bomb', { x: -9, rotation: -2, duration: 0.06, ease: 'none', yoyo: true, repeat: 7, overwrite: 'auto' }, 4.78);
+      tl.fromTo(
+        '.shockwave',
+        { xPercent: -50, yPercent: -50, scale: 0.2, opacity: 0 },
+        { xPercent: -50, yPercent: -50, scale: 7, opacity: 0.75, duration: 0.5, ease: 'power2.out' },
+        4.85
+      );
+      tl.to('.flash', { opacity: 0.82, duration: 0.05, ease: 'none', yoyo: true, repeat: 1 }, 4.98);
+      tl.to('.flash', { opacity: 0, duration: 0.3, ease: 'power2.out' }, 5.1);
+
+      window.__timelines.bomb = tl;
+    </script>
+  </body>
+</html>
